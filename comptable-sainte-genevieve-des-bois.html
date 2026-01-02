@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>Comptable sainte genevieve des bois</title>
+<meta property="og:title" content="Comptable sainte genevieve des bois" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Comptable sainte genevieve des bois" />
+<meta property="og:description" content="Comptable sainte genevieve des bois" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/comptable-sainte-genevieve-des-bois" />
+<meta property="og:url" content="http://localhost:4000/comptable-sainte-genevieve-des-bois" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/comptable-sainte-genevieve-des-bois",
+"description":"Comptable sainte genevieve des bois",
+"name":"Comptable sainte genevieve des bois"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Comptable Sainte-Geneviève-des-Bois : Libérez votre entreprise avec Liberize</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">
+          Vous êtes entrepreneur, artisan, commerçant ou dirigeant d’une PME à <strong>Sainte-Geneviève-des-Bois</strong> ? 
+          Gérer une entreprise implique de faire face à de nombreuses obligations comptables, fiscales, 
+          sociales et administratives. Pour vous concentrer sur votre cœur de métier, s’entourer 
+          d’un partenaire fiable est essentiel. Liberize, cabinet comptable implanté dans l’Essonne, 
+          vous accompagne au quotidien pour simplifier votre gestion et accélérer votre croissance.
+      </p>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Un cabinet comptable proche de vous à Sainte-Geneviève-des-Bois</h2>
+             <p class="notre_content-p">
+              Sainte-Geneviève-des-Bois est une ville dynamique située dans le département de l’Essonne (91), 
+              connue pour son tissu économique varié et sa qualité de vie. Proche de <strong>Évry-Courcouronnes, 
+              Massy et Brétigny-sur-Orge</strong>, elle bénéficie d’une situation géographique stratégique au 
+              cœur de la région Île-de-France.
+             </p>
+             <p class="notre_content-p">
+              C’est dans ce contexte que notre cabinet <strong>Liberize</strong> propose des solutions comptables 
+              sur mesure pour les entreprises locales. Que vous soyez une TPE, 
+              une PME ou un travailleur indépendant, nous vous accompagnons avec proximité, 
+              réactivité et expertise.
+             </p>
+          </div>
+
+          <div class="notre_content">
+              <h2 class="notre_content-title">Nos services comptables à Sainte-Geneviève-des-Bois</h2>
+              <p class="notre_content-p">
+                  Pour que vous puissiez vous concentrer sur votre activité, notre cabinet 
+                  comptable prend en charge l’ensemble des tâches administratives, fiscales et sociales. 
+                  Nos services s’adaptent à votre secteur et à la taille de votre entreprise.
+              </p>
+              <h3 class="notre_content-head">1. Comptabilité et fiscalité</h3>
+              <p class="notre_content-p">
+                  Nous assurons la tenue complète de votre comptabilité : saisie, rapprochements bancaires, 
+                  révisions, établissement des comptes annuels et bilans. Notre équipe veille 
+                  également à l’optimisation fiscale et au respect de vos obligations légales : 
+                  déclarations de TVA, impôts sur les sociétés, déclarations sociales et fiscales.
+              </p>
+             <h3 class="notre_content-head">2. Accompagnement juridique</h3>
+             <p class="notre_content-p">
+                  Créer et gérer une entreprise implique souvent des démarches juridiques complexes.
+                  Nous vous aidons dans la rédaction de statuts, la création d’entreprise, les modifications statutaires, 
+                  les assemblées générales ou encore la transmission. Grâce à notre expertise, vous êtes sûr de respecter 
+                  les obligations légales tout en avançant sereinement.
+             </p>
+             <h3 class="notre_content-head">3. Gestion sociale et RH</h3>
+             <p class="notre_content-p">
+                  La paie, les déclarations sociales, les contrats de travail et la gestion des ressources 
+                  humaines peuvent vite devenir chronophages. Notre équipe s’occupe de tout : 
+                  bulletins de paie, DSN, formalités d’embauche, congés, départs… 
+                  pour vous libérer de ces contraintes.
+             </p>
+             <h3 class="notre_content-head">4. Conseils aux dirigeants</h3>
+              <p class="notre_content-p">
+                  Chaque décision compte dans la vie d’une entreprise. Notre cabinet vous accompagne dans 
+                  l’analyse de vos chiffres, l’élaboration de stratégies de croissance, 
+                  la recherche de financement ou la préparation d’un projet de développement. 
+                  Avec Liberize, vous n’êtes jamais seul pour prendre les bonnes décisions.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Une philosophie centrée sur l’humain et la proximité
+              </h2>
+              <p class="notre_content-p">
+                  Ce qui nous distingue ? Une <strong>philosophie inspirée du concept japonais 
+                  « Ikigai »</strong>, qui repose sur l’équilibre entre plaisir, utilité, compétence et sens.
+              </p>
+              <p class="notre_content-p">
+                  Au sein de <strong>Liberize</strong>, nous croyons qu’une entreprise performante 
+                  repose sur des dirigeants épanouis et bien entourés. C’est pourquoi nous 
+                  cultivons une approche humaine et chaleureuse, en privilégiant l’écoute, 
+                  le partage et la confiance.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Un comptable ancré dans la vie locale de Sainte-Geneviève-des-Bois
+              </h2>
+              <p class="notre_content-p">
+                  Être comptable à Sainte-Geneviève-des-Bois, ce n’est pas seulement 
+                  gérer des chiffres : c’est aussi comprendre le territoire, 
+                  ses acteurs économiques et son environnement.
+              </p>
+              <p class="notre_content-p">
+                  Notre équipe connaît parfaitement les spécificités du secteur : 
+                  proximité des zones d’activités comme <strong>Zone d’Activités de la 
+                  Croix Blanche</strong>, réseau de transport efficace avec <strong>RER C</strong>, 
+                  développement économique soutenu par la <strong>Communauté 
+                  d'agglomération Cœur d'Essonne Agglomération</strong>.
+              </p>
+              <p class="notre_content-p">
+                  Nous collaborons avec des entrepreneurs locaux de divers secteurs : commerce, restauration, 
+                  artisanat, services, immobilier, médical… Notre expertise nous permet 
+                  d’apporter des solutions adaptées à chaque profil.
+              </p>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Les avantages de travailler avec Liberize
+              </h2>
+              <p class="notre_content-p">
+                  Faire appel à un <strong>comptable à Sainte-Geneviève-des-Bois</strong>, 
+                  c’est bénéficier de nombreux atouts :
+              </p>
+              <ul>
+                  <li class="notre_content-p">
+                      <strong>Gain de temps</strong> : concentrez-vous sur le développement de votre activité pendant que nous nous occupons de votre comptabilité.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Sérénité fiscale et juridique</strong> : nous sécurisons votre activité en vous assurant conformité et optimisation.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Accompagnement stratégique</strong> : nos conseils vont au-delà du simple bilan comptable.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Proximité et réactivité</strong> : une équipe disponible et à l’écoute, située à quelques minutes de votre entreprise.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Ambiance conviviale</strong> : nous mettons un point d’honneur à créer une relation humaine, durable et de confiance.
+                  </li>
+              </ul>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Des chiffres qui parlent
+              </h2>
+              <p class="notre_content-p">
+                  Depuis 2006, <strong>Liberize</strong> accompagne des centaines d’entreprises dans leur développement.
+              </p>
+              <ul>
+                  <li class="notre_content-p">
+                      <strong>16 ans</strong> de conseil et d’expertise
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>256 entrepreneurs</strong> accompagnés
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>24 800 notes de frais</strong> traitées / business plans réalisés
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>1 350 bilans</strong> présentés avec rigueur et transparence
+                  </li>
+              </ul>
+              <p class="notre_content-p">
+                  Ces chiffres témoignent de notre savoir-faire et de 
+                  la confiance que nos clients nous accordent.
+              </p>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Une équipe soudée au service de votre réussite
+              </h2>
+              <p class="notre_content-p">
+                  Notre réussite repose sur l’union, le partage et la passion du métier. 
+                  Chez Liberize, chaque collaborateur apporte sa pierre à l’édifice. 
+                  Nous organisons régulièrement des journées de cohésion pour renforcer 
+                  notre esprit d’équipe et garantir une qualité de service optimale à nos clients.
+              </p>
+              <p class="notre_content-p">
+                  Parce que la satisfaction client est notre moteur, 
+                  nous plaçons le dialogue au centre de notre démarche. 
+                  Votre comptable devient un véritable partenaire de votre réussite.
+              </p>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Des valeurs fortes au service de votre entreprise
+              </h2>
+              <p class="notre_content-p">
+                  Nos valeurs guident chacune de nos actions :
+              </p>
+              <ul>
+                  <li class="notre_content-p">
+                      <strong>Proximité</strong> : nous sommes ancrés dans le tissu économique local de Sainte-Geneviève-des-Bois.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Innovation</strong> : nous utilisons des outils modernes pour simplifier votre gestion.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Transparence</strong> : aucune surprise dans nos honoraires et une communication claire.
+                  </li>
+                  <li class="notre_content-p">
+                      <strong>Engagement</strong> : votre réussite est notre priorité.
+                  </li>
+              </ul>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Des partenaires locaux pour des solutions globales
+              </h2>
+              <p class="notre_content-p">
+                  Au-delà de la comptabilité, nous travaillons en étroite collaboration 
+                  avec des partenaires dans des domaines complémentaires : avocats, 
+                  notaires, experts en marketing digital, courtiers bancaires… afin 
+                  de vous proposer une solution complète et personnalisée.
+              </p>
+              <p class="notre_content-p">
+                  Nous pouvons par exemple vous accompagner dans la négociation 
+                  d’un prêt professionnel auprès de votre banque locale, 
+                  ou vous mettre en relation avec des spécialistes du financement.
+              </p>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Liberize, votre comptable à Sainte-Geneviève-des-Bois
+              </h2>
+              <p class="notre_content-p">
+                  Que vous soyez en phase de création, de développement ou de transmission 
+                  d’entreprise, <strong>Liberize</strong> vous accompagne à chaque étape de votre projet.
+              </p>
+              <p class="notre_content-p">
+                  Notre objectif : vous libérer des contraintes administratives et 
+                  financières pour vous permettre de vous concentrer sur l’essentiel 
+                  : votre réussite.
+              </p>
+              <p class="notre_content-p"><strong>📍 Adresse de notre agence Essonne</strong></p>
+              <p class="notre_content-p">
+                  29 rue Rosières – 91240 Saint-Michel-sur-Orge 
+                  (à proximité immédiate de Sainte-Geneviève-des-Bois)
+              </p>
+              <p class="notre_content-p">📞 <a href="tel:0164968311">01 64 96 83 11</a></p>
+              <p class="notre_content-p">📩 <a href="mailto:hello@liberize.fr">hello@liberize.fr</a></p>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+           <div class="notre_content">
+              <h2 class="notre_content-title">
+                  Conclusion : Faites de Liberize votre allié au quotidien
+              </h2>
+              <p class="notre_content-p">
+                  Trouver un <strong>comptable à Sainte-Geneviève-des-Bois</strong> n’est pas 
+                  seulement une question de chiffres. C’est choisir un partenaire 
+                  de confiance, qui comprend votre entreprise et votre territoire. 
+                  Grâce à notre expertise, notre philosophie humaine et notre 
+                  connaissance locale, nous vous aidons à prendre les bonnes 
+                  décisions pour faire grandir votre activité.
+              </p>
+              <p class="notre_content-p">
+                  Contactez-nous dès aujourd’hui pour découvrir comment <strong>Liberize</strong> 
+                  peut transformer votre gestion comptable en véritable levier de performance.
+              </p>
+           </div>
+      </div>
+  </div>
+</div>
+</section>    </div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

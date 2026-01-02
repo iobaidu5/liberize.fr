@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>Les spécificités comptables des médecins libéraux</title>
+<meta property="og:title" content="Les spécificités comptables des médecins libéraux" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Guide complet sur la gestion des cabinets médicaux : obligations déontologiques, facturation selon la CCAM, dépenses, et tenue comptable. Cliquez ici !" />
+<meta property="og:description" content="Guide complet sur la gestion des cabinets médicaux : obligations déontologiques, facturation selon la CCAM, dépenses, et tenue comptable. Cliquez ici !" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/comptable-medecin-liberal" />
+<meta property="og:url" content="http://localhost:4000/comptable-medecin-liberal" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/comptable-medecin-liberal",
+"description":"Guide complet sur la gestion des cabinets médicaux : obligations déontologiques, facturation selon la CCAM, dépenses, et tenue comptable. Cliquez ici !",
+"name":"Les spécificités comptables des médecins libéraux"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Les particularités comptables pour les médecins libéraux</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">En tant que médecin libéral, vous êtes confronté à des contraintes et spécificités comptables qui sont propres à votre profession. Pour assurer une gestion optimale de votre cabinet médical et respecter la réglementation en vigueur, il est crucial d'être informé sur ces spécificités et de bien les maîtriser.</p>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Régime fiscal et social applicable aux médecins libéraux</h2>
+              <p class="notre_content-p">Le choix du régime fiscal et social dépend principalement du statut professionnel du médecin libéral (micro-entrepreneur, profession libérale classique, société d'exercice libéral, etc.) et des revenus générés par son activité.</p>
+              <h3 class="notre_content-head">Micro-entrepreneur</h3>
+              <p class="notre_content-p">Le statut de micro-entrepreneur s'adresse aux médecins dont les revenus n'excèdent pas un certain seuil, fixé chaque année par l'administration fiscale. Ce régime offre l'avantage de simplicité, avec notamment un mode de calcul et de paiement simplifié des cotisations sociales et des impôts. Le médecin doit cependant être vigilant quant au plafonnement des revenus, pouvant entraîner des obligations de changer de régime fiscal et social en cours d'année.</p>
+              <h3 class="notre_content-head">Profession libérale classique</h3>
+              <p class="notre_content-p">Pour les médecins ne souhaitant pas opter pour le statut de micro-entrepreneur ou y étant inéligibles, le régime de la profession libérale classique est généralement retenu. Il comporte deux régimes fiscaux possible pour le médecin :</p>
+              <ul>
+                  <li class="notre_content-p">Le régime réel simplifié (BNC) : en cas de revenus inférieurs à certains seuils, les charges et les recettes sont déclarées annuellement à l'aide du formulaire 2035.</li>
+                  <li class="notre_content-p">Le régime réel normal (BIC) : lorsque les seuils du régime réel simplifié sont dépassés, le médecin doit établir une comptabilité engageant des obligations déclaratives supplémentaires, ainsi qu'une approbation des comptes lors de la clôture de l'exercice.</li>
+              </ul>
+              <p class="notre_content-p">En matière de cotisations sociales, le médecin libéral est affilié à la Sécurité Sociale des Indépendants (SSI).</p>
+              <h3 class="notre_content-head">Société d'exercice libéral (SEL)</h3>
+              <p class="notre_content-p">Les médecins peuvent également choisir de constituer une société d'exercice libéral. Celle-ci peut revêtir différentes formes juridiques, à savoir :</p>
+              <ul>
+                  <li class="notre_content-p">La SELARL ou société d'exercice libéral à responsabilité limitée.</li>
+                  <li class="notre_content-p">La SELAFA ou société d'exercice libéral anonyme.</li>
+                  <li class="notre_content-p">La SELAS ou société d'exercice libéral par actions simplifiée.</li>
+                  <li class="notre_content-p">La SELCA ou société d'exercice libéral en commandite par actions.</li>
+              </ul>
+              <p class="notre_content-p">Ce mode d'exercice présente l'avantage de faciliter la collaboration entre professionnels médicaux tout en permettant une meilleure protection du patrimoine personnel.</p>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Les règles spécifiques aux professions médicales</h2>
+              <p class="notre_content-p">Les médecins libéraux doivent respecter certaines règles particulières en matière de comptabilité et de fiscalité, inhérentes au secteur médical.</p>
+              <h3 class="notre_content-head">Les obligations déontologiques</h3>
+              <p class="notre_content-p">La profession médicale est soumise à des obligations déontologiques strictes, qui ont un impact sur la gestion quotidienne du cabinet. Par exemple, le secret professionnel s'applique dans les relations avec les autres intervenants du secteur médical, mais également dans les pratiques au sein du cabinet comme l'accès aux dossiers médicaux, la facturation ou encore la communication avec les patients. Il convient donc pour le médecin d'adopter les bonnes pratiques afin de garantir la protection des données sensibles auxquelles il a accès.</p>
+              <h3 class="notre_content-head">La facturation et la nomenclature des actes médicaux</h3>
+              <p class="notre_content-p">La facturation des actes médicaux est régie par une nomenclature spécifique (la Classification Commune des Actes Médicaux), qui doit être rigoureusement respectée par le médecin libéral.</p>
+              <p class="notre_content-p">Afin de faciliter cette tâche et d'être en conformité avec la réglementation, il est recommandé d'utiliser un logiciel de gestion de cabinet adapté aux activités médicales, permettant notamment une facturation électronique avec télétransmission automatisée.</p>
+              <h3 class="notre_content-head">Les dépenses déductibles et non-déductibles pour un médecin libéral</h3>
+              <p class="notre_content-p">Pour calculer le bénéfice imposable du médecin libéral, il est nécessaire de distinguer les dépenses déductibles des dépenses non déductibles. <strong>Les dépenses déductibles</strong> sont celles qui sont directement liées à l'activité professionnelle et dont le caractère est strictement nécessaire. Parmi elles, on peut citer :</p>
+              <ul>
+                  <li class="notre_content-p">les frais de personnel (salaires, charges sociales),</li>
+                  <li class="notre_content-p">les achats de matériel médical,</li>
+                  <li class="notre_content-p">les dépenses de formation continue obligatoire,</li>
+                  <li class="notre_content-p">les cotisations professionnelles (Ordre des Médecins, syndicats, …)</li>
+              </ul>
+              <p class="notre_content-p">En revanche, les dépenses non-déductibles sont celles qui ne présentent pas un lien direct avec l'activité du médecin.</p>
+          </div>
+      </div>
+  </div>
+  <div class="row mb-5">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Gestion comptable d'un cabinet médical</h2>
+              <p class="notre_content-p">La tenue d'une comptabilité rigoureuse et conforme aux obligations légales est une nécessité pour le médecin libéral. Plusieurs options s'offrent à lui :</p>
+              <h3 class="notre_content-head">Tenir sa propre comptabilité</h3>
+              <p class="notre_content-p">Le médecin peut choisir de tenir lui-même sa comptabilité en ayant recours à un logiciel adapté à ses besoins et facilitant la production des documents obligatoires (bilan, compte de résultat, liasse fiscale…). Il doit donc être à l'aise avec les notions comptables de base et avoir une bonne maîtrise des spécificités propres à son activité.</p>
+              <h3 class="notre_content-head">Faire appel à un expert-comptable</h3>
+              <p class="notre_content-p">Pour garantir une gestion optimale de sa comptabilité, il est recommandé de confier cette mission à un expert-comptable. Notre cabinet de comptable « <strong>Liberize</strong> » est à même de prodiguer des conseils personnalisés et d'optimiser la fiscalité du médecin libéral tout en veillant au respect des obligations légales.</p>
+              <h3 class="notre_content-head">Opter pour un logiciel de gestion adapté</h3>
+              <p class="notre_content-p">Pour simplifier la gestion quotidienne de son cabinet, le médecin peut choisir un logiciel spécifique qui intègre notamment :</p>
+              <ul>
+                  <li class="notre_content-p">la prise de rendez-vous,</li>
+                  <li class="notre_content-p">la gestion des dossiers patients,</li>
+                  <li class="notre_content-p">la facturation et la télétransmission aux organismes de sécurité sociale,</li>
+                  <li class="notre_content-p">la tenue de la comptabilité,</li>
+                  <li class="notre_content-p">le suivi des indicateurs financiers (trajectoire prévisionnelle, Ratio coût-effet).</li>
+              </ul>
+              <p class="notre_content-p mb-5">Ces outils permettent ainsi d'alléger significativement la charge administrative liée à l'activité médicale et de concentrer davantage sur le cœur de métier que représente le soin aux patients.</p>
+          </div>
+      </div>
+  </div>
+</div>
+</section>    </div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

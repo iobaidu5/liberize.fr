@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>Cabinet Comptable en Essonne 91 | Liberize</title>
+<meta property="og:title" content="Cabinet Comptable en Essonne 91 | Liberize" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Votre cabinet comptable en Essonne, nos experts accompagnent toutes les entreprises à la recherche de conseils unique pour mener à bien leur comptabilité !" />
+<meta property="og:description" content="Votre cabinet comptable en Essonne, nos experts accompagnent toutes les entreprises à la recherche de conseils unique pour mener à bien leur comptabilité !" />
+<meta name="keywords" content="Cabinet comptable Essonne" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/",
+"description":"Votre cabinet comptable en Essonne, nos experts accompagnent toutes les entreprises à la recherche de conseils unique pour mener à bien leur comptabilité !",
+"name":"Cabinet Comptable en Essonne 91 | Liberize"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+  <section class="slider">
+  <div class="container">
+      <div class="slider_content">
+          <h1 class="slider_content-title">Liberize, le cabinet comptable en Essonne qui donne des ailes à votre
+              entreprise</h1>
+      </div>
+      <div class="slider_content2">
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="slider_content2-image">
+                      <img src="./assets/img/1.png" alt="logo Liberize" class="slider_content2-image--img">
+                  </div>
+              </div>
+              <div class="col-md-9">
+                  <div class="slider_content2-content">
+                      <p class="slider_content2-content--p">Vous dirigez une entreprise, alors gagner du temps est
+                          essentiel. <strong>Gagner du temps tout en profitant d’une expertise comptable de qualité et d’un
+                          accueil chaleureux l’est davantage.</strong> C’est pourquoi le cabinet Liberize allie
+                          professionnalisme et convivialité pour vous accompagner au quotidien.
+                      </p>
+                      <a href="#philosophie" class="slider_content2-content--link">Découvrir notre philosophie</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="cards">
+    <div class="container-fluid">
+      <div class="cards_cards">
+        <div class="container slides_header">
+          <h2 class="slides_header-title justify-content-center">Votre cabinet comptable dans le 91 à l’écoute de vos
+            envies et de vos besoins</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 my-2">
+            <a href="#philosophie" class="equipe_link">
+            </a>
+            <div class="cards_card"><a href="#philosophie" class="equipe_link">
+                <h3 class="cards_card-title">Notre philosophie</h3>
+                <p class="cards_card-p">Accédez aux valeurs ainsi qu’à la philosophie de notre cabinet à
+                  travers le concept japonais Ikigai.
+                </p>
+              </a><a href="#philosophie" class="cards_card-link"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6 my-2">
+            <a href="#services" class="equipe_link">
+            </a>
+            <div class="cards_card"><a href="#services" class="equipe_link">
+                <h3 class="cards_card-title">Nos services</h3>
+                <p class="cards_card-p">Profitez de services sur mesure et d’un accompagnement personnalisé
+                  dans une ambiance chaleureuse.
+                </p>
+              </a><a href="#services" class="cards_card-link"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6 my-2">
+            <a href="./a-propos-du-cabinet-liberize.html" class="equipe_link">
+            </a>
+            <div class="cards_card"><a href="./a-propos-du-cabinet-liberize.html" class="equipe_link">
+                <h3 class="cards_card-title">À propos</h3>
+                <p class="cards_card-p">Découvrez nos équipes, notre histoire et tout ce que vous devez
+                  savoir sur Liberize.
+                </p>
+              </a><a href="./a-propos-du-cabinet-liberize.html" class="cards_card-link"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6 my-2">
+            <a href="#contact" class="equipe_link">
+            </a>
+            <div class="cards_card"><a href="#contact" class="equipe_link">
+                <h3 class="cards_card-title">Nous contacter</h3>
+                <p class="cards_card-p">Contactez-nous pour profiter de notre <strong>expertise</strong> et de
+                  l’atmosphère
+                  conviviale du cabinet.</p>
+              </a><a href="#contact" id="services" class="cards_card-link"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="banner_left">
+      <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+    </div>
+    <div class="banner_right">
+      <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+    </div>
+    <div class="container">
+      <div class="banner_content">
+        <h2 class="banner_content-title">Cabinet comptable en Essonne : Les services de Liberize vous libère de toutes
+          contraintes</h2>
+        <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune"
+            class="banner_content-dots--img">
+        </div>
+        <p class="banner_content-p">Quoi de mieux qu’avoir l’esprit léger et du temps pour gérer les imprévus ?
+          L’ensemble des services proposés par notre cabinet ont été pensés pour vous décharger de vos contraintes
+          et maximiser votre temps. Une collaboration réussie passe par l’écoute, le partage, la confiance et la
+          compréhension. Nous adaptons nos services à vos envies et à vos besoins car vous êtes unique.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="notre pb-0">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer_content">
+          <h2 class="notre_content-title text-center py-3">Notre agence en Essonne</h2>
+
+          <p class="footer_content-p">29 rue Rosières 91240 <strong>Saint-Michel-sur-Orge</strong></p>
+          <p class="footer_content-p">Tel: <a href="tel:0164968311" class="footer_content-p">01 64 96 83 11</a></p>
+          <p class="footer_content-p"><a href="mailto:hello@liberize.fr" class="footer_content-p">hello@liberize.fr</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="footer_content">
+          <h2 class="notre_content-title text-center py-3">Nos agences à Paris</h2>
+          <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+          <p class="footer_content-p">Tel: <a href="tel:0164968311" class="footer_content-p">01 64 96 83 11</a></p>
+          <p class="footer_content-p"><a href="mailto:hello@liberize.fr" class="footer_content-p">hello@liberize.fr</a>
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+          <p class="footer_content-p">68 rue Michel ange 75016</p>
+          <p class="footer_content-p">Tel: <a href="tel:0164968311" class="footer_content-p">01 64 96 83 11</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="notre_content-title text-center py-3">Notre agence à Montargis</h2>
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311" class="footer_content-p">01 64 96 83 11</a></p>
+      </div>
+
+      <div class="col-lg-6">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="notre">
+    <div class="container">
+      <div class="notre_content">
+        <div class="footer_content-logo pt-0">
+          <a href="./index.html"><img loading="lazy" src="./assets/img/logo.svg"
+              class="footer_content-logo--img w-20-rem" alt="logo Liberize"></a>
+        </div>
+        <h2 class="notre_content-title">Jamais un cabinet d’expertise comptable n’aura autant compté pour vous
+        </h2>
+        <p class="notre_content-p">Quel que soit la taille de l’entreprise, les dirigeants doivent répondre à
+          certaines obligations. De nombreuses interrogations peuvent alors rester sans réponse. <a
+            href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html" class="link">
+            Les collaborateurs</a> de notre cabinet comptable en <strong>région Île-de-France</strong> sauront vous
+          écouter afin de vous fournir tous les éléments dont vous avez besoin.</p>
+      </div>
+      <div class="notre_content">
+        <h3 class="notre_content-head">Nos missions
+        </h3>
+        <p class="notre_content-p">Notre <strong>cabinet d'expert comptable en Essonne</strong> a mis en place
+          différents
+          services afin de vous accompagner au quotidien. Nous intervenons dans les domaines liés à votre activité
+          :</p><br>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; <strong>Achats et
+            Finances</strong> ;
+        </p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp;
+          <strong>Juridique</strong> ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; <strong>Aide aux
+            dirigeants</strong> ;
+        </p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; <strong>Gestion clients
+            et
+            ressources humaines</strong> ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; <strong>Marketing et
+            commerce</strong>.</p>
+        <br>
+        <p class="notre_content-p">Vous aurez la possibilité de vous affranchir des tâches relatives à la rédaction
+          des contrats, la production de documents comptables et des déclarations fiscales, du paiement de vos
+          fournisseurs.</p>
+        <p class="notre_content-p">Vous recevrez aussi des conseils et des analyses complètes sur vos stratégies
+          commerciale, marketing et web. Nous vous redirigerons vers nos partenaires experts dans tous ces
+          domaines.</p>
+        <p class="notre_content-p">Contactez-nous si vous désirez en savoir plus.</p>
+      </div>
+      <div class="notre_image">
+        <img src="./assets/img/5.jpg" alt="photo de groupe avec le personnel de l'entreprise"
+          class="notre_image-img">
+      </div>
+      <div class="notre_content">
+        <h3 class="notre_content-head">Les bénéfices
+        </h3>
+        <p class="notre_content-p">Les services de comptabilité peuvent être un plus pour vous et votre activité
+          comptabilité . Travailler à nos côtés vous permettra de :</p><br>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Libérer du temps pour
+          vous consacrer pleinement à votre activité ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Réduire la sensation
+          de stress ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Vous sécuriser dans les
+          domaines fiscal, juridique, gestion de patrimoine comptable et social ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Recevoir des conseils
+          et un accompagnement dans vos prises de décisions ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Profiter de
+          l’atmosphère chaleureuse et conviviale du cabinet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu mt-0">
+    <div class="menu_content-logo">
+      <img src="./assets/img/abs-logo.svg" alt="logo Liberize" class="menu_content-logo--img">
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="menu_image"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Nos valeurs
+            déterminent notre
+            identité et aiguillent
+            nos actions</h2>
+          <p class="menu_content-p">Les valeurs présentes au sein du cabinet définissent notre manière de
+            travailler. Depuis la naissance de la société en 2006, nous avons développé les compétences et la
+            cohésion de nos équipes. Il est important pour nous que nos collaborateurs puissent
+            s’épanouir au quotidien dans notre cabinet comptable dans le <strong>bassin parisien</strong> et trouver
+            leur raison d’être
+            professionnelle à l’image de l’approche japonaise appelée ikigai</p>
+          <a href="./notre-philosophie-ikigai.html" id="philosophie"
+            class="menu_content-link">Découvrir notre
+            philosophie</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="menu_content w-100 px-0 pb-5" style="max-width: 100%;">
+      <h2 class="menu_content-title text-center w-100">La philosophie de notre cabinet d'expert comptable en Essonne
+      </h2>
+    </div>
+  </div>
+
+  <section class="banner">
+    <div class="banner_left">
+      <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+    </div>
+    <div class="banner_right">
+      <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+    </div>
+    <div class="container">
+      <div class="banner_content">
+        <h2 class="banner_content-title">L’ikigaï : trouver sa raison d’être professionnelle dans notre cabinet</h2>
+        <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune"
+            class="banner_content-dots--img">
+        </div>
+        <p class="banner_content-p">Notre travail fait partie intégrante de notre vie. Il est essentiel de donner du
+          sens à nos actions. En nous inspirant des différentes notions présentes dans <a
+            href="https://fr.wikipedia.org/wiki/Ikigai" target="_blank" class="link-white">l’Ikigai</a>, nous
+          avons
+          décidé d’étoffer nos valeurs afin d’instaurer un véritable équilibre au sein du cabinet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="notre">
+    <div class="container">
+      <div class="notre_image">
+        <img src="./assets/img/3.jpg" alt="photo de groupe avec le personnel de l'entreprise"
+          class="notre_image-img">
+      </div>
+      <div class="notre_content">
+        <h2 class="notre_content-title">Nous souhaitons que chacun se sente épanoui dans son travail au quotidien
+        </h2>
+        <p class="notre_content-p">Nous mettons un point d’honneur à ce que chacun de nos collaborateurs puisse se
+          réaliser à nos côtés. En effet, le fondement de notre philosophie se définit par la recherche d’une
+          raison d’être professionnelle. Cela, afin que nous puissions donner un sens à notre travail et ainsi
+          nous réveiller chaque matin inspirés et motivés.</p>
+      </div>
+      <div class="notre_content">
+        <h3 class="notre_content-head">Bien-être professionnel
+        </h3>
+        <p class="notre_content-p">De par l’ensemble de nos valeurs, nous préservons une qualité de vie au travail
+          optimale pour l’ensemble de nos équipes. Ainsi, accomplissement et bien-être professionnel nous donnent
+          l’opportunité d’évoluer dans une ambiance chaleureuse et dynamique dans notre cabinet comptable proche de
+          <strong>Massy</strong> et <strong>Évry-Courcouronnes</strong>. Nous nous évertuons chaque
+          jour à
+          conserver l’épanouissement et l’enthousiasme collectif qui nous motivent et qui font le bonheur du
+          cabinet.</p>
+      </div>
+      <div class="notre_content">
+        <h3 class="notre_content-head">Union et partage
+        </h3>
+        <p class="notre_content-p">Cette approche nous permet également d’établir une cohésion au sein de nos
+          équipes. L’union qui en découle est un point fort du cabinet, grâce à l’organisation de journées de
+          cohésion et de team building. De plus, nous mettons en avant les forces, le talent, les qualités et les
+          compétences de chaque collaborateur. Puisque tous les membres du cabinet sont essentiels à notre
+          activité, chacun apporte sa pierre à l’édifice afin de construire, ensemble, l’avenir de
+          Liberize.</p>
+      </div>
+      <div class="notre_bg">
+        <h3 class="notre_bg-title">Je ne perds jamais.<br>
+          Soit je gagne, soit j’apprends.</h3>
+        <p class="notre_bg-name">Nelson Mandela</p>
+      </div>
+      <div class="notre_content">
+        <h2 class="notre_content-title">Liberize c’est aussi une équipe soudée toujours proche de ses clients
+        </h2>
+        <p class="notre_content-p">La motivation personnelle des membres de Liberize passe également par la
+          satisfaction de nos clients. Le dialogue est essentiel à notre expertise car il nous permet d’être au
+          plus proche de ces derniers. De plus, il nous tient à cœur de rester constamment à l’écoute de nos
+          clients afin d’apporter de la valeur à l’ensemble de nos services. La proximité de notre cabinet
+          comptable dans le <strong>91</strong> avec notre clientèle nous permet d’être plus réactifs et de proposer des
+          prestations qui vont au-delà du simple bilan comptable.</p>
+      </div>
+      <div class="notre_image">
+        <img src="./assets/img/4.jpg" alt="photo de groupe avec le personnel de l'entreprise"
+          class="notre_image-img">
+        <p class="notre_content-p mt-3 p-10">C’est donc dans une ambiance conviviale et chaleureuse que nous aurons
+          le plaisir
+          de vous accueillir.</p>
+      </div>
+      <div class="notre_content">
+        <h3 class="notre_content-head">Un plus pour nos clients
+        </h3>
+        <p class="notre_content-p">C’est à travers le partage, la cohésion et l’implication de nos
+          équipes que nos
+          clients peuvent trouver la sérénité et le recul nécessaire pour se consacrer entièrement à la croissance
+          de leur entreprise. Grâce à nos valeurs, au savoir-faire de nos collaborateurs et à notre motivation au
+          quotidien, nos clients peuvent dire :</p><br>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Je suis libéré de
+          toute contrainte ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; Avec Liberize, c’est
+          simple et efficace ;</p>
+        <p class="notre_content-p pl-5"><i class="fas fa-circle notre_content-icon"></i>&nbsp; J’ai
+          confiance en
+          Liberize.</p>
+      </div>
+      <div class="notre_content mt-5">
+        <h3 class="notre_content-head text-center">16 ans de conseil et d’expertise
+        </h3>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="notre_count">
+              <h4 class="notre_count-number counter-count">256</h4>
+              <hr class="notre_count-dots">
+              <p class="notre_count-p">entrepreneurs<br>
+                accompagnés</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="notre_count">
+              <h4 class="notre_count-number counter-count">24800</h4>
+              <hr class="notre_count-dots">
+              <p class="notre_count-p">notes de frais traitées/<br>
+                business plans construits</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="notre_count">
+              <h4 class="notre_count-number counter-count">1350</h4>
+              <hr class="notre_count-dots">
+              <p class="notre_count-p">bilans<br>
+                présentés</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="menu_content w-100 px-0 pb-5 pt-0" style="max-width: 100%;">
+      <h2 class="menu_content-title text-center w-100">Vos questions</h2>
+    </div>
+  </div>
+
+  <section class="faq">
+    <div class="container">
+      <div class="d-display faq_display">
+        <div class="d-details faq_content">
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span> Est-il possible de négocier mon prêt à la banque avec mon comptable ?</summary>
+            <p class="faq_content-details--p">Oui. Nous vous accompagnons lors de votre rendez-vous à la banque
+              pour vous rassurer et répondre aux questions de votre banquier.
+            </p>
+          </details>
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span>Comment gagner du temps dans le paiement des frais ?</summary>
+            <p class="faq_content-details--p">Après votre accord de paiement, nous assurons chaque mois le
+              règlement de vos fournisseurs et de vos salariés
+            </p>
+          </details>
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span> Est-il possible de négocier mon prêt à la banque avec mon comptable ?</summary>
+            <p class="faq_content-details--p">Oui. Nous vous accompagnons lors de votre rendez-vous à la banque
+              pour vous rassurer et répondre aux questions de votre banquier.</p>
+          </details>
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span> Comment gagner du temps dans le paiement des frais ?</summary>
+            <p class="faq_content-details--p">Après votre accord de paiement, nous assurons chaque mois le
+              règlement de vos fournisseurs et de vos salariés</p>
+          </details>
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span> Comment faire des relances client quand on n’a pas le temps ?</summary>
+            <p class="faq_content-details--p">C’est simple, libérez-vous des contraintes en nous confiant vos
+              relances.</p>
+          </details>
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span> Que dois-je payer le mois prochain ?</summary>
+            <p class="faq_content-details--p">Chaque trimestre, nous élaborons un échéancier qui vous permettra
+              de visualiser en détail ce que vous aurez à payer.</p>
+          </details>
+          <details class="tab-control faq_content-details">
+            <summary class="faq_content-details--title"> <span class="faq_content-details--icon">
+              </span> Moi entrepreneur qui m’écoute ?</summary>
+            <p class="faq_content-details--p">En tant que dirigeant, vous avez besoin d’être écouté.
+              Puisqu’aucune question ne doit rester sans réponse, nous nous engageons à vous apporter notre
+              savoir et nos connaissances au quotidien.</p>
+          </details>
+        </div>
+      </div>
+      <div class="faq_link">
+        <a href="./questions-reponses-cabinet-comptable.html" class="faq_link-p">Voir toutes les
+          questions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stripe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="stripe_content">
+            <h3 class="stripe_content-title pb-5 mb-5">Que vous soyez à Paris ou en Essonne, optez pour une
+              expertise qui va au-delà du simple bilan comptable en choisissant Liberize.</h3>
+          </div>
+          <div class="stripe_dots">
+            <img src="./assets/img/dots.png" alt="Pointillés jaune" class="stripe_dots-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slides">
+    <div class="container slides_header">
+      <h2 class="slides_header-title justify-content-end">S’épanouir à l’image de
+        l’approche japonaise
+        appelée ikigai.</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="slides_content">
+          <div class="container">
+            <p class="slides_content-p">Aujourd’hui, notre équipe soudée, qualifiée et passionnée est prête à
+              vous
+              accueillir. Composée de <a href="./fabienne-caquineau.html" class="link">Fabienne</a>
+              et de ses <a href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html"
+                class="link">14
+                collaborateurs</a> répartis dans nos 2 établissements, nos équipes s’affairent à vous
+              proposer
+              des solutions et des conseils adaptés à vos besoins.
+              <br><br>
+              Nous mettons un point d’honneur à rester proche de nos clients et à les accompagner dans une
+              atmosphère conviviale, car c’est ensemble que nous participerons au développement de votre
+              activité.
+              Que vous soyez à Paris ou en Essonne, optez pour une expertise qui va au-delà du simple bilan
+              comptable en choisissant Liberize.
+            </p>
+            <a href="./notre-philosophie-ikigai.html" class="slider_content2-content--link">Découvrir
+              notre philosophie</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="slides_owl owl-carousel owl owl-loaded owl-drag">
+
+
+
+          <!-- <div class="slides_image">
+              <img src="./assets/img/4.webp" alt="Fabienne, gérante et expert comptable"
+                  class="slides_image-img">
+          </div> -->
+          <div class="owl-stage-outer">
+            <div class="owl-stage"
+              style="transform: translate3d(-610px, 0px, 0px); transition: all; width: 2335px; padding-left: 100px; padding-right: 100px;">
+              <div class="owl-item cloned" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/2.webp"
+                    alt="Emmanuella, comptable de l'entreprise" class="slides_image-img">
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/3.webp" alt="logo Liberize"
+                    class="slides_image-img">
+                </div>
+              </div>
+              <div class="owl-item active" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/1.webp" alt="Margot, comptable de l'entreprise"
+                    class="slides_image-img">
+                </div>
+              </div>
+              <div class="owl-item" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/2.webp"
+                    alt="Emmanuella, comptable de l'entreprise" class="slides_image-img">
+                </div>
+              </div>
+              <div class="owl-item" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/3.webp" alt="logo Liberize"
+                    class="slides_image-img">
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/1.webp" alt="Margot, comptable de l'entreprise"
+                    class="slides_image-img">
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 275px; margin-right: 30px;">
+                <div class="slides_image">
+                  <img src="./assets/img/2.webp"
+                    alt="Emmanuella, comptable de l'entreprise" class="slides_image-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span
+                aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span
+                aria-label="Next">›</span></button></div>
+          <div class="owl-dots disabled"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

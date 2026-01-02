@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>Déclaration Échange Services | Pas de Seuil à Respecter</title>
+<meta property="og:title" content="Déclaration Échange Services | Pas de Seuil à Respecter" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content=" Découvrez les obligations de la déclaration d'échange de services dans l'ue : seuil, modalités. évitez pénalités et assurez conformité fiscale." />
+<meta property="og:description" content=" Découvrez les obligations de la déclaration d'échange de services dans l'ue : seuil, modalités. évitez pénalités et assurez conformité fiscale." />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/declaration-echange-services" />
+<meta property="og:url" content="http://localhost:4000/declaration-echange-services" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/declaration-echange-services",
+"description":" Découvrez les obligations de la déclaration d'échange de services dans l'ue : seuil, modalités. évitez pénalités et assurez conformité fiscale.",
+"name":"Déclaration Échange Services | Pas de Seuil à Respecter"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Seuil déclaration échange services: obligations clé</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">Vous vous interrogez sur le seuil déclaration échange de services et vos obligations fiscales en tant qu'entreprise active dans l'Union européenne ? Cet article éclaire les <strong>règles clés de la déclaration</strong> européenne de services (DES), un outil central pour encadrer les prestations intracommunautaires. Découvrez les seuils applicables, les cas de dispense et les bonnes pratiques pour éviter les erreurs, avec un focus sur les régimes spécifiques et les flux complexes.</p>
+      <h2 class="notre_content-title banner_content-p">Sommaire</h2>
+      <ol class="banner_content-ol" style="margin-left: 25px;">
+          <li class="banner_content-p"><a href="#definition-des" class="banner_content-p">Comprendre la déclaration européenne de services (DES)</a></li>
+          <li class="banner_content-p"><a href="#obligations-des" class="banner_content-p">Obligations liées à la déclaration d'échange de services</a></li>
+          <li class="banner_content-p"><a href="#contenu-des" class="banner_content-p">Contenu et modalités de la déclaration européenne</a></li>
+          <li class="banner_content-p"><a href="#cas-particuliers" class="banner_content-p">Cas particuliers et points d'attention</a></li>
+      </ol>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <!-- <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_image">
+              <img src="https://www.liberize.fr/assets/img/sponso.jpg" style="height: 554px; object-fit: cover;" alt="photo d'une voiture de sport avec des logo de sponsoring" class="notre_image-img">
+          </div>
+      </div>
+  </div> -->
+  
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title" id="definition-des">Comprendre la déclaration européenne de services (DES)</h2>
+              <p class="notre_content-p">La déclaration européenne de services (DES) recense les prestations réalisées par des entreprises françaises pour des clients établis dans l’Union européenne. Ce document statistique permet de <strong>contrôler la TVA intracommunautaire</strong> et concerne uniquement les opérations entre entreprises. Elle s’inscrit dans le dispositif visant à assurer une traçabilité fiscale des flux de services entre états membres.</p>
+              <div style="overflow:auto;max-width:100%">
+                  <table class="table table-bordered notre_content-p">  <thead>    <tr>      <th>Caractéristique</th>      <th>DES</th>      <th>DEB</th>    </tr>  </thead>  <tbody>    <tr>      <td>Type d'opérations</td>      <td>Prestations de services</td>      <td>Livraisons de biens</td>    </tr>    <tr>      <td>Destinataire</td>      <td>Entreprise ou personne non assujettie à la TVA</td>      <td>Entreprise assujettie à la TVA</td>    </tr>    <tr>      <td>Zone géographique</td>      <td>Union européenne</td>      <td>Union européenne</td>    </tr>    <tr>      <td>Fréquence</td>      <td>Mensuelle ou trimestrielle selon le régime</td>      <td>Mensuelle</td>    </tr>    <tr>      <td>Seuil déclencheur</td>      <td>Pas de seuil</td>      <td>Seuil de 460&nbsp;000&nbsp;€</td>    </tr>    <tr>      <td>Administration</td>      <td>Douanes</td>      <td>Direction générale des douanes et des droits indirects (DGDDI)</td>    </tr>  </tbody>  <tfoot>    <tr>      <td colspan="3">Légende : Ce tableau compare les principales caractéristiques de la déclaration européenne de services (DES) et de la déclaration européenne de biens (DEB), deux obligations déclaratives distinctes pour les flux intracommunautaires.</td>    </tr>  </tfoot></table>
+              </div>
+              <p class="notre_content-p">La DES complète le dispositif de l’état récapitulatif TVA en traquant les prestations de services entre entreprises de l’Union européenne. Elle permet aux <strong>administrations fiscales d’évaluer les flux</strong> et d’assurer la conformité des opérations. L’administration des douanes française collecte ces données, avant de les transmettre à Eurostat pour une analyse à l’échelle européenne. Ce dispositif renforce la coordination fiscale au sein de l’espace communautaire. Comprendre <a href="https://liberize.fr/liasse-fiscale">La liasse fiscale</a> est un document central pour la conformité fiscale des entreprises en France, liée aux obligations déclaratives comme la DES. Ce lien apporte un contexte légal et pratique utile pour comprendre les enjeux de la DES.</p>
+          </div>
+
+          <div class="notre_content">
+              <h2 class="notre_content-title" id="obligations-des">Obligations liées à la déclaration d'échange de services</h2><h3 class="notre_content-head" id="seuil-declaration">Qui est concerné par la DES et quel est le seuil déclaratif</h3><p class="notre_content-p">Les entreprises qui fournissent des services à des entreprises établies dans un autre état membre de l'Union européenne doivent <strong>établir une déclaration européenne</strong> de services (DES).</p>
+              <ul class="notre_content-p" style="margin-left: 25px;">  <li><strong>Entreprises fournissant des services</strong> à des sociétés dans un autre pays de l'UE</li>  <li><strong>Assujettis à la TVA</strong> soumis au régime normal utilisant le service en ligne de la DES</li>  <li><strong>Entreprises en franchise</strong> en base TVA pouvant déclarer via le formulaire papier Cerfa 13694</li>  <li><strong>Micro-entrepreneurs</strong> devant <strong>obtenir un numéro de TVA intracommunautaire</strong> pour leurs opérations avec l'UE</li>  <li><strong>Entreprises : informer SIE</strong> sous 15 jours</li></ul>
+              <p class="notre_content-p">La déclaration européenne de services s'applique à toutes les prestations <strong>intracommunautaires, sans seuil</strong> minimum à déclarer. Les entreprises doivent inclure chaque transaction dans leur dépôt mensuel ou trimestriel selon leur régime fiscal.</p>
+              <h3 class="notre_content-head" id="calendrier-procedure">Quand et comment effectuer sa déclaration d'échange de services</h3>
+              <p class="notre_content-p">La période de référence correspond au mois où la TVA devient exigible dans l'état membre du preneur, avec un <strong>délai de dépôt au dixième jour ouvrable</strong> suivant.</p>
+              <p class="notre_content-p">Le dépôt s'effectue en ligne via le portail des douanes, sauf pour les entreprises en franchise en base pouvant utiliser le formulaire Cerfa 13694. Le processus inclut l'identification, la saisie des données et la <strong>validation électronique de la déclaration</strong>.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 id="contenu-des" class="notre_content-title">Contenu et modalités de la déclaration européenne</h2>
+               <h3 id="informations-required" class="notre_content-head">Informations à fournir dans une DES</h3>  
+               <p class="notre_content-p">La déclaration européenne de services (DES) exige des données précises sur les prestations réalisées pour des entreprises de l’Union européenne. Vous devez <strong>fournir le numéro d’identification</strong> TVA intracommunautaire du preneur, le montant HT de la prestation et le code service correspondant à l’activité.</p>
+               <p class="notre_content-p">
+               <a href="./facture-a-etablir.html">Une facturation précise</a> est importante pour garantir l’exactitude des données transmises dans la DES, notamment le numéro TVA du preneur. <br> Il convient de vérifier le statut du client via le système VIES pour éviter les erreurs. Les montants déclarés correspondent aux prestations intracommunautaires effectuées durant la période visée, sans seuil minimum. <strong>Une identification rigoureuse prévient</strong> les redressements fiscaux.</p>  <h3 id="depot-suivi" class="notre_content-head">Procédure de dépôt et suivi de votre déclaration</h3>  <p class="notre_content-p">Le dépôt s’effectue via le portail des douanes, avec authentification sécurisée. Vous devez saisir les données client, les codes services et les montants. Une fois validée, la DES génère un accusé réception à conserver pendant trois ans. Le dépôt de la DES <strong>nécessite des outils ou accompagnement expert</strong>. <a href="https://liberize.fr/nos-services-comptables/">Nos services comptables</a> présentent des services comptables adaptés aux entreprises soumises à cette obligation.</p>  
+              <div style="overflow:auto;max-width:100%">
+                  <table class="table table-bordered notre_content-p">    <thead>      <tr>        <th>Code Service</th>        <th>Type de Prestation</th>        <th>Description</th>      </tr>    </thead>    <tbody>      <tr>        <td>RS</td>        <td>Sécurité</td>        <td>Redevance pour mesures de sécurité appliquée aux envois</td>      </tr>      <tr>        <td>N DOM</td>        <td>Livraison Express Nationale</td>        <td>Service de livraison express en France métropolitaine</td>      </tr>      <tr>        <td>LE</td>        <td>Ramassage Occasionnel</td>        <td>Service ponctuel de collecte de colis</td>      </tr>      <tr>        <td>U ECX</td>        <td>Livraison UE Express</td>        <td>Service express pour expéditions dans l'Union européenne</td>      </tr>      <tr>        <td>W ESU</td>        <td>Livraison UE Économique</td>        <td>Option économique pour livraisons intracommunautaires</td>      </tr>    </tbody>    <tfoot>      <tr>        <td colspan="3">Légende : Ce tableau présente des exemples de codes de services logistiques pouvant être déclarés dans la DES. Les codes officiels suivent la nomenclature européenne et varient selon la nature des échanges entre entreprises membres de l’Union européenne.</td>      </tr>    </tfoot>  
+              </table>
+              </div>  <p class="notre_content-p">Après transmission, un accusé de dépôt électronique est émis. En cas d’erreur, une rectification est possible via le même portail avant le délai légal. <strong>Conservez les justificatifs</strong> fiscaux et commerciaux pendant trois ans pour les contrôles douaniers.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 id="cas-particuliers" class="notre_content-title">Cas particuliers et points d'attention</h2>
+              <h3 id="services-exclus" class="notre_content-head">Services exclus de la déclaration d'échange</h3>
+              <p class="notre_content-p">Les services des agences de voyage, les prestations liées à un immeuble et le transport de passagers sont <strong>dispensés de déclaration européenne de services</strong>. Ces exclusions s'appliquent aux opérations de nature spécifique ou soumises à des règles particulières dans l'Union européenne.</p>
+              <ul class="notre_content-p">  <li><strong>Services des agences de voyage</strong> non soumis à l'obligation de DES</li>  <li><strong>Services se rattachant à un immeuble</strong>, taxés dans le pays du bien</li>  <li><strong>Prestations [...] déclaration</strong></li>  <li><strong>Manifestations exclues</strong> de la DES</li>  <li><strong>Locations de moyens</strong> de transport de courte durée non déclarables</li></ul>
+              <p class="notre_content-p"><a href="./tva-sur-sponsoring.html">Certains services comme le sponsoring</a> bénéficient de régimes spécifiques qui les dispensent de déclaration. Les entreprises doivent néanmoins <strong>maîtriser les règles de TVA applicables</strong> dans les états membres pour ces prestations spécifiques, avec des traitements fiscaux particuliers.</p>
+              <h3 id="regimes-specifiques" class="notre_content-head">Régimes spécifiques et exceptions</h3>
+              <p class="notre_content-p">Les micro-entrepreneurs doivent obtenir un numéro de TVA intracommunautaire pour leurs échanges avec l'UE. Les petites entreprises en franchise de TVA peuvent utiliser le formulaire Cerfa 13694, tandis que les autres déclarent en ligne via le portail des douanes.</p>
+              <p class="notre_content-p">Les flux triangulaires entre trois états membres bénéficient d'un régime simplifié. Les services électroniques s'accompagnent d'un mini-guichet unique (MOSS) pour la TVA. Les prestations à plusieurs preneurs dans différents pays de l'UE s'appliquent au cas par cas, <strong>selon le lieu d'établissement du client</strong>.</p>
+              <h3 id="sanctions-regularisation" class="notre_content-head">Sanctions et régularisation en cas d'erreur</h3>
+              <p class="notre_content-p">Une amende de 750 € s'applique en cas de non-déclaration ou de retard. Chaque erreur ou omission dans la DES entraîne <strong>une pénalité de 15 €, plafonnée à 1 500 €</strong>, avec possibilité de doublon en cas de non-régularisation sous 30 jours.</p>
+              <p class="notre_content-p"><a href="./questions-reponses-cabinet-comptable.html">Contactez-nous</a> pour régulariser une DES oubliée ou erronée. L'administration des douanes prévoit des procédures de rectification en ligne via DELTA G et DELTA X. Les demandes de régularisation doivent intervenir sans délai pour éviter des majorations de 5 % et intérêts de retard. Les corrections sont possibles sous certaines conditions et délais.</p>
+              <p class="notre_content-p">Comprendre la déclaration d'échange de services (DES) et son seuil vous évite des pénalités. Identifiez vos flux intracommunautaires et déclarez en ligne avant les délais. Une conformité <strong>proactive renforce votre crédibilité</strong> fiscale en Union européenne.</p>
+
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

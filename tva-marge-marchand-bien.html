@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>TVA Marge Marchand Biens : Déduction Travaux Éligibilité</title>
+<meta property="og:title" content="TVA Marge Marchand Biens : Déduction Travaux Éligibilité" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="tva marge marchand biens : conditions, calcul et déduction TVA pour réduire l’assiette imposable et optimiser la rentabilité des opérations immobilières." />
+<meta property="og:description" content="tva marge marchand biens : conditions, calcul et déduction TVA pour réduire l’assiette imposable et optimiser la rentabilité des opérations immobilières." />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/tva-marge-marchand-bien" />
+<meta property="og:url" content="http://localhost:4000/tva-marge-marchand-bien" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/tva-marge-marchand-bien",
+"description":"tva marge marchand biens : conditions, calcul et déduction TVA pour réduire l’assiette imposable et optimiser la rentabilité des opérations immobilières.",
+"name":"TVA Marge Marchand Biens : Déduction Travaux Éligibilité"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Tva marge marchand biens : guide pratique</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">La TVA sur marge pour les marchands de biens génère souvent des interrogations sur son calcul et son application. Comment optimiser ce régime fiscal tout en respectant les conditions d’éligibilité ? Ce guide pratique vous explique les <strong>principes fondamentaux, les avantages fiscaux</strong> et les cas pratiques pour maîtriser ce mécanisme, en intégrant les spécificités des terrains à bâtir et des acquisitions auprès de non-assujettis.</p>
+      <h2 class="notre_content-title banner_content-p mt-5">Sommaire</h2>
+      <ol class="banner_content-ol" style="margin-left: 25px;">
+          <li class="banner_content-p"><a href="#principes-tva-marge-marchands-biens" class="banner_content-p">Les principes fondamentaux de la TVA sur marge dans l'immobilier</a></li>
+          <li class="banner_content-p"><a href="#calcul-application-tva-marge" class="banner_content-p">Calcul et application de la TVA sur marge immobilière</a></li>
+          <li class="banner_content-p"><a href="#specificites-operations-immobilieres" class="banner_content-p">Les spécificités des opérations immobilières et la TVA sur marge</a></li>
+      </ol>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <!-- <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_image">
+              <img src="https://www.liberize.fr/assets/img/sponso.jpg" style="height: 554px; object-fit: cover;" alt="photo d'une voiture de sport avec des logo de sponsoring" class="notre_image-img">
+          </div>
+      </div>
+  </div> -->
+  
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title" id="principes-tva-marge-marchands-biens">Les principes fondamentaux de la TVA sur marge dans l'immobilier</h2>
+             <h3 class="notre_content-head">Définition et cadre légal de la TVA sur marge</h3>
+             <p class="notre_content-p">La TVA sur marge constitue un <strong>système particulier d'imposition applicable aux marchands de biens</strong> dans le cadre de leurs opérations d'achat-revente immobilières. <a href="./liasse-fiscale.html">Consultez les obligations déclaratives via la liasse fiscale</a> pour appliquer correctement la TVA sur marge. Ce régime juridique s'appuie sur les dispositions de l'article 268 du Code général des impôts.</p>
+             <p class="notre_content-p">Le mécanisme repose sur une assiette limitée à la marge bénéficiaire, calculée comme la différence entre le prix d'acquisition et <strong>le prix de cession</strong> du bien immobilier. Ce dispositif s'inscrit en dérogation au principe général d'imposition sur le montant total de la transaction, en raison de l'absence de droit à déduction fiscale pour certains types d'acquisition.</p>
+             <h3 class="notre_content-head">Conditions d'application pour les marchands de biens</h3>
+             <p class="notre_content-p">Pour bénéficier du régime de la TVA sur marge, les marchands de biens doivent <strong>remplir plusieurs conditions cumulatives</strong> concernant la nature des biens, le statut des vendeurs et les caractéristiques des opérations.</p>
+             <ul class="notre_content-p" style="margin-left: 25px;">  <li><strong>Type de bien concerné</strong> (immeubles anciens, terrains à bâtir, biens d’occasion)</li>  <li><strong>Statut du vendeur initial</strong> (non-assujetti à la TVA, particulier, ou entreprise en franchise de TVA)</li>  <li><strong>Ancienneté du bien</strong> (immeuble achevé depuis plus de 5 ans)</li>  <li><strong>Absence de rénovation lourde</strong> (définie comme travaux sur fondations, éléments porteurs, ou deux tiers des éléments du second œuvre)</li>  <li><strong>Non-droit à déduction de TVA</strong> lors de l’acquisition du bien</li>  <li><strong>Unité juridique</strong> entre le bien acquis et vendu (exclusion des terrains divisés après démolition)</li>  <li><strong>Calcul basé sur la marge</strong> (différence entre prix de vente et prix d’achat)</li>  <li><strong>Mention explicite</strong> du régime de la marge sur la facture</li>  <li><strong>Déclaration selon le régime</strong> réel normal ou simplifié</li>  <li><strong>Éviter la requalification</strong> d’une rénovation légère en rénovation lourde</li>  <li><strong>Taux applicables</strong> (20% pour les opérations standard, taux réduits pour certains travaux)</li></ul>
+             <p class="notre_content-p">L'acquisition d'un bien auprès d'un vendeur non assujetti à la TVA représente un <strong>préalable nécessaire à l'application</strong> de ce régime fiscal. Cette disposition vise à compenser l'absence de déduction fiscale lors de l'acquisition initiale, tout en facilitant une meilleure compétitivité commerciale.</p>
+          </div>
+
+          <div class="notre_content">
+             <h3 class="notre_content-head">Avantages fiscaux de la TVA sur marge</h3>
+             <p class="notre_content-p">L'application de la TVA sur marge permet aux marchands de biens d'<strong>optimiser leur charge fiscale</strong> en se limitant à l'imposition de la marge bénéficiaire. <a href="./charges-deductible-lmnp.html">Découvrez les charges déductibles</a> pour renforcer davantage votre avantage fiscal. Ce mécanisme réduit le montant total de la taxe à reverser à l'administration.</p>
+             <p class="notre_content-p">Le régime de la TVA sur marge améliore la gestion de trésorerie en limitant l'assiette d'imposition à la seule plus-value réalisée. Contrairement au régime classique, la taxe s'applique uniquement à la différence entre le prix d'achat et le prix de revente, ce qui <strong>diminue le montant immédiatement exigible</strong> à l'administration fiscale.</p>
+             <h3 class="notre_content-head">Différence avec le régime de TVA classique</h3>
+             <p class="notre_content-p">Le régime de la TVA sur marge diffère du système standard par son assiette d'imposition <strong>circonscrite à la valeur ajoutée</strong> de l'opération. À l'inverse du système sur prix total, ce dispositif se concentre uniquement sur la plus-value généré par la transaction immobilière.</p>
+             <div style="overflow:auto;max-width:100%">
+              <table class="table table-bordered notre_content-p"><caption>Comparatif des régimes de TVA pour les marchands de biens</caption><thead><tr><th>Critères</th><th>TVA sur marge</th><th>TVA sur prix total</th></tr></thead><tbody><tr><td>Base de calcul</td><td>Marge réalisée (prix de vente - prix d'acquisition)</td><td>Montant total de la vente</td></tr><tr><td>Conditions d'éligibilité</td><td>Vente d'immobilier ancien ou terrain à bâtir acheté auprès d'un non-assujetti (particulier)</td><td>Vente d'immeuble neuf ou opération où l'acquisition a donné droit à déduction TVA</td></tr><tr><td>Calcul de la TVA</td><td>Marge HT × taux de TVA (ex. 20%)</td><td>Prix de vente TTC × (taux / 1 + taux)</td></tr><tr><td>Frais exclus du calcul</td><td>Travaux de rénovation, frais d'acquisition soumis à TVA, honoraires agence</td><td>Aucune exclusion spécifique</td></tr><tr><td>Déduction TVA</td><td>Stockage de la TVA payée sur les travaux jusqu'à l'option pour la TVA</td><td>Déduction immédiate de la TVA sur les frais professionnels</td></tr><tr><td>Avantages fiscaux</td><td>Réduction de l'assiette imposable, optimisation fiscale</td><td>Crédit de TVA immédiat sur les coûts</td></tr><tr><td>Impact commercial</td><td>Prix de vente potentiellement plus bas pour l'acquéreur</td><td>Prix TTC incluant intégralement la TVA</td></tr></tbody>
+          </table></div>
+          <p class="notre_content-p">Le <strong>choix entre ces deux régimes fiscaux</strong> influence les résultats financiers des marchands de biens. Le système sur marge se concentre sur la valeur ajoutée de l'opération, tandis que le régime classique s'applique à l'intégralité du prix de vente, avec possibilité de déduction immédiate des coûts engagés.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title" id="calcul-application-tva-marge">Calcul et application de la TVA sur marge immobilière</h2>
+               <h3 id="informations-required" class="notre_content-head">Méthode de calcul de la marge imposable</h3>  
+              <p class="notre_content-p">La TVA sur marge se calcule sur la différence entre le <strong>prix de vente et le prix d'acquisition</strong> d'un bien immobilier éligible. <a href="https://liberize.fr/facture-a-etablir">Découvrez les bonnes pratiques pour établir vos factures</a> dans le cadre d'une opération sous ce régime.</p>
+              <p class="notre_content-p">Le calcul "en dedans" extrait la TVA de la marge TTC via la formule : <strong>Marge imposable = formule</strong> : (Prix de vente - Prix d'acquisition) / [(100 + Taux de TVA) / 100]. Ce mécanisme s'applique à la marge réalisée sur les opérations éligibles.</p>
+              <h3 class="notre_content-head">Taux de TVA applicable aux opérations immobilières</h3>
+              <p class="notre_content-p">Le <strong>taux standard de TVA</strong> sur marge est de 20%. Il peut descendre à 10% ou 5,5% pour certains logements sociaux, rénovations énergétiques ou opérations en zones prioritaires.</p>
+              <p class="notre_content-p"><strong>Le taux réduit à 10%</strong> s'applique aux travaux d'amélioration de logements anciens. Le taux de 5,5% concerne les opérations en zones ANRU ou QPV sous conditions de ressources et de prix.</p>
+              <h3 class="notre_content-head">Cas pratiques et exemples de calcul</h3>
+              <p class="notre_content-p">Un marchand achète un immeuble 150.000€ et le revend 250.000€. Sa <strong>marge imposable et TVA</strong> de 15.667€.</p>
+              <p class="notre_content-p">Pour un terrain acquis 80.000€ et revendu 120.000€, <strong>la marge de 40.000€ est imposable à 20%.</strong> La TVA s'élève donc à 8.000€, calculée hors frais annexes.</p>
+              <h3 class="notre_content-head">Impact sur le prix de vente final</h3>
+              <p class="notre_content-p">La TVA sur marge réduit l'assiette d'imposition à la seule marge bénéficiaire. Elle <strong>influence la détermination du prix final</strong> en limitant la charge fiscale supportée par le vendeur.</p>
+              <p class="notre_content-p">L'application de la TVA sur marge permet de <strong>proposer des prix plus compétitifs</strong>. Elle génère un avantage commercial en limitant l'incidence fiscale sur le prix final de vente.</p>
+              <h2 id="specificites-operations-immobilieres" class="notre_content-title mt-5">Les spécificités des opérations immobilières et la TVA sur marge</h2>
+              <h3 class="notre_content-head">Acquisition et revente de terrains à bâtir</h3>
+              <p class="notre_content-p">Le régime de la TVA sur marge s’applique aux opérations d’achat-revente de terrains à bâtir sous certaines conditions. L'acquisition doit avoir été <strong>réalisée sans droit à déduction fiscale</strong> pour le marchand de biens.</p>
+              <p class="notre_content-p">La jurisprudence récente encadre strictement l'application de la <strong>TVA sur marge</strong> aux terrains à bâtir. L’unité juridique entre le bien acquis et celui vendu devient un critère déterminant. Une division de terrain après démolition empêche l’application du régime, même si l'acquisition initiale était éligible.</p>
+              <p class="notre_content-p">La TVA sur marge pour les marchands de biens repose sur trois piliers : une assiette fiscale limitée à la marge bénéficiaire, des conditions strictes d’éligibilité (notamment l’achat à un non-assujetti) et un calcul spécifique pour optimiser la trésorerie. Pour en bénéficier, vérifiez vos droits à la déduction, maîtrisez les taux applicables et anticipez l’impact sur vos opérations. Adopter ce régime,  c’est <strong>alléger votre charge fiscale</strong> tout en renforçant la rentabilité de vos investissements immobiliers.</p>
+
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

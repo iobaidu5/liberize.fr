@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>TVA sur Sponsoring | Règles & Avantages</title>
+<meta property="og:title" content="TVA sur Sponsoring | Règles & Avantages" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/tva-sur-sponsoring" />
+<meta property="og:url" content="http://localhost:4000/tva-sur-sponsoring" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/tva-sur-sponsoring",
+"description":"",
+"name":"TVA sur Sponsoring | Règles & Avantages"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Tva sur sponsoring : comprendre les règles et avantages</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">
+          Le <strong>sponsoring</strong> est une pratique courante pour de nombreuses entreprises souhaitant accroître leur visibilité et renforcer leur image de marque. Cependant, il est essentiel de bien comprendre comment fonctionne la <strong>tva sur le sponsoring</strong>, notamment en ce qui concerne les obligations fiscales et les avantages potentiels. Cet article explore les différents aspects du sujet, des contrats de sponsoring aux déductions fiscales possibles.
+      </p>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_image">
+              <img src="./assets/img/sponso.jpg" style="height: 554px; object-fit: cover;" alt="photo d'une voiture de sport avec des logo de sponsoring" class="notre_image-img">
+          </div>
+      </div>
+  </div>
+  
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Définition et cadre légal du sponsoring</h2>
+              <p class="notre_content-p">
+                  Le sponsoring, ou parrainage, est un contrat par lequel une entreprise (le sponsor) finance une activité, un événement ou une organisation, en échange de contreparties comme de la visibilité médiatique ou des opérations promotionnelles. Ce type de partenariat peut prendre différentes formes et est régi par certaines <strong>réglementations fiscales</strong>, notamment en matière de tva.
+              </p>
+              <p class="notre_content-p">
+                  D'un point de vue juridique, un <strong>contrat de sponsoring</strong> doit préciser clairement les engagements des deux parties. Il inclut les montants versés, les dates de paiement, ainsi que les contreparties attendues. La transparence dans ces documents permet d’assurer une bonne conformité fiscale et de bénéficier des éventuels avantages associés.
+              </p>
+          </div>
+
+          <div class="notre_content">
+                  <h3 class="notre_content-head">Exemples de contreparties</h3>
+                  <p class="notre_content-p">
+                      Les contreparties peuvent être variées, comprenant souvent :
+                  </p>
+                  <ul class="pl-5">
+                      <li class="notre_content-p">La mention du sponsor sur des supports promotionnels (bannières, affiches, sites internet)</li>
+                      <li class="notre_content-p">L'organisation d'événements où le nom du sponsor est mis en avant</li>
+                      <li class="notre_content-p">La distribution de produits sponsorisés pendant les événements</li>
+                  </ul>
+                  <p class="notre_content-p">
+                      Ces activités renforcent la visibilité du sponsor tout en soutenant l'initiative parrainée. Toutefois, elles nécessitent une <strong>facturation adéquate</strong> pour éviter tout litige fiscal.
+                  </p>
+              </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Traitement de la tva dans les contrats de sponsoring</h2>
+              <p class="notre_content-p">
+                  La tva (taxe sur la valeur ajoutée) est un impôt indirect perçu sur la consommation de biens et services. Dans le cas du sponsoring, la question de son application revêt une importance particulière. En général, les montants versés dans le cadre d’un <strong>contrat de sponsoring</strong> sont soumis à la tva, car ils constituent une contrepartie pour un service rendu.
+              </p>
+              <p class="notre_content-p">
+                  Il est donc crucial de bien documenter les transactions entre le sponsor et le sponsorié, en émettant des <strong>factures ttc</strong> qui précisent le montant hors taxes, le taux de tva appliqué, et le total taxe comprise. Le respect de cette procédure permet de garantir la légalité des transactions et d’éviter des sanctions fiscales.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Calcul de la tva sur le sponsoring</h3>
+              <p class="notre_content-p">
+                  Pour calculer correctement la tva due sur un <strong>contrat de sponsoring</strong>, voici les étapes à suivre :
+              </p>
+              <ul class="pl-5">
+                  <li class="notre_content-p">Déterminer le montant brut (hors tva) de la contribution financière convenue.</li>
+                  <li class="notre_content-p">Appliquer le taux de tva réduit ou standard, selon la nature des contreparties fournies.</li>
+                  <li class="notre_content-p">Émettre une facture avec les détails suivants : montant brut, taux de tva, montant de la tva, et total toutes taxes comprises (ttc).</li>
+              </ul>
+              <p class="notre_content-p">
+                  Cette démarche assure une transparence totale vis-à-vis de l'administration fiscale et des partenaires commerciaux.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Avantages communicationnels et fiscaux du sponsoring</h2>
+              <p class="notre_content-p">
+                  Participer à des activités de sponsoring présente plusieurs avantages pour les entreprises, au-delà de la simple exposition médiatique. L'un de ces avantages inclut la possibilité pour le sponsor de bénéficier d’une <strong>déduction fiscale</strong> pour les dépenses engagées. Ces dépenses doivent être dûment justifiées et enregistrées dans les comptes de l'entreprise, conformément aux normes comptables et fiscales.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Aspects communicationnels</h3>
+              <p class="notre_content-p">
+                  En s'associant à des événements renommés ou des initiatives populaires, une entreprise peut :
+              </p>
+              <ul class="pl-5">
+                  <li class="notre_content-p">Renforcer sa notoriété</li>
+                  <li class="notre_content-p">Améliorer son image de marque</li>
+                  <li class="notre_content-p">Créer des liens émotionnels avec son public cible</li>
+              </ul>
+              <p class="notre_content-p">
+                  Ces effets tangibles se traduisent souvent par une augmentation des ventes et une meilleure fidélité client.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Déduction fiscale pour sponsoring</h3>
+              <p class="notre_content-p">
+                  En termes de <strong>déduction fiscale</strong>, les coûts encourus pour le sponsoring peuvent être déductibles des bénéfices imposables de l'entreprise. Pour cela, les conditions suivantes doivent être remplies :
+              </p>
+              <ol class="pl-5">
+                  <li class="notre_content-p">Les dépenses doivent être directement liées à l'activité professionnelle de l'entreprise.</li>
+                  <li class="notre_content-p">Elles ne doivent pas excéder des montants raisonnables en regard des revenus générés.</li>
+                  <li class="notre_content-p">Les dépenses doivent être appuyées par des justificatifs appropriés (factures, contrat de sponsoring).</li>
+              </ol>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Exceptions et cas particuliers</h2>
+              <p class="notre_content-p">
+                  Certaines situations spécifiques peuvent entraîner des variations dans l'application de la tva sur le sponsoring. Par exemple, les <strong></strong>dons non soumis à tva diffèrent du sponsoring, même s'ils peuvent paraître similaires en termes de soutien financier.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Dons versus sponsoring</h3>
+              <p class="notre_content-p">
+                  Contrairement au <strong>sponsoring</strong>, les dons sont effectués sans attente de contreparties directes. Ils présentent toutefois des avantages fiscaux distincts, notamment des réductions d'impôt pour les donateurs. Pour être considérés comme des <strong>dons non soumis à tva</strong>, ces contributions doivent respecter les critères suivants :
+              </p>
+              <ul class="pl-5">
+                  <li class="notre_content-p">Absence de contrepartie directe pour le donateur</li>
+                  <li class="notre_content-p">Soutien apporté à une association reconnue d'utilité publique ou à une initiative caritative spécifique</li>
+              </ul>
+              <p class="notre_content-p">
+                  Bien que les mécènes puissent apparaître sur certains supports de communication, la distinction claire entre don et sponsoring évite toute confusion fiscale.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Traiter les contreparties matérielles</h3>
+              <p class="notre_content-p">
+                  Lorsqu'un sponsor apporte des produits ou services supplémentaires en plus de la contribution financière, ces éléments peuvent aussi être soumis à la tva. Cela inclut par exemple la fourniture de matériel publicitaire, la mise à disposition d'espaces ou la donation de marchandises pendant les événements.
+              </p>
+              <p class="notre_content-p">
+                  Pour ces <strong>éléments matériels</strong>, il est essentiel de :
+              </p>
+              <ol class="pl-5">
+                  <li class="notre_content-p">Évaluer leur valeur marchande équitable</li>
+                  <li class="notre_content-p">Inclure cette valeur dans le calcul global de la contribution soumise à la tva</li>
+                  <li class="notre_content-p">Documenter soigneusement chaque aspect de la transaction pour justifier la base fiscale</li>
+              </ol>
+
+              <p class="notre_content-p">
+                  Comprendre la <strong>tva sur le sponsoring</strong> est vital pour toute entreprise désirant utiliser ce levier pour accroître sa visibilité et obtenir divers avantages communicationnels et fiscaux. Un traitement correct de la tva, via des factures ttc détaillées et conformes, garantit non seulement la légalité mais optimise également les bénéfices financiers. Enfin, faire la distinction nette entre sponsoring et dons permet d'exploiter au mieux les avantages fiscaux tout en évitant des complications potentielles avec les administrations fiscales.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

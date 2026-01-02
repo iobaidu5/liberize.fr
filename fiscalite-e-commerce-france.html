@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>Fiscalité e-commerce France : TVA, seuils clés international</title>
+<meta property="og:title" content="Fiscalité e-commerce France : TVA, seuils clés international" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Fiscalité e-commerce france: tva, régimes fiscaux et obligations. conseils pour optimiser imposition et gérer ventes internationales en conformité." />
+<meta property="og:description" content="Fiscalité e-commerce france: tva, régimes fiscaux et obligations. conseils pour optimiser imposition et gérer ventes internationales en conformité." />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/fiscalite-e-commerce-france" />
+<meta property="og:url" content="http://localhost:4000/fiscalite-e-commerce-france" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/fiscalite-e-commerce-france",
+"description":"Fiscalité e-commerce france: tva, régimes fiscaux et obligations. conseils pour optimiser imposition et gérer ventes internationales en conformité.",
+"name":"Fiscalité e-commerce France : TVA, seuils clés international"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Fiscalité e-commerce France : Les bases à connaître</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">La fiscalité e-commerce en France peut rapidement devenir un casse-tête pour les entrepreneurs. Entre les taux de TVA variables selon les produits, les obligations déclaratives spécifiques aux ventes en ligne et les régimes fiscaux adaptés à chaque modèle d’activité, il est important de <strong>maîtriser les enjeux fiscaux</strong> pour éviter les erreurs coûteuses. Dans cet article, nous décortiquons les règles clés, les seuils à connaître et les stratégies pour optimiser votre imposition, tout en garantissant votre conformité avec les exigences de l’administration fiscale.</p>
+      <h2 class="notre_content-title banner_content-p mt-5">Sommaire</h2>
+      <ol class="notre_content-p" style="margin-left: 25px; color: white;">  <li><a href="#fondamentaux-fiscalite-ecommerce" style="color: white;">Fondamentaux de la fiscalité pour l'e-commerce en France</a></li>  <li><a href="#tva-declarations-fiscales" style="color: white;">Obligations TVA et déclarations fiscales pour les e-commerçants</a></li>  <li><a href="#fiscalite-internationale-ecommerce" style="color: white;">Fiscalité internationale et défis du commerce électronique transfrontalier</a></li></ol>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  
+  <div class="row mt-5">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title" id="fondamentaux-fiscalite-ecommerce">Fondamentaux de la fiscalité pour l'e-commerce en France</h2>
+             <p class="notre_content-p">La fiscalité e-commerce en France repose sur des principes spécifiques aux ventes en ligne. Elle englobe des <strong>taxes, impôts et obligations déclaratives</strong> détaillées par l’administration fiscale. Le cadre légal varie selon le statut juridique, le chiffre d’affaires et la nature des transactions effectuées.</p>  
+             <p class="notre_content-p">Le choix du statut juridique <strong>influence directement la gestion fiscale</strong> d’une activité e-commerce. Une micro-entreprise bénéficie de simplifications, tandis qu’une SARL ou SAS impose un régime réel avec déduction des charges. Le seuil de chiffre d’affaires détermine également l’application de la TVA, la franchise en base ou la nécessité d’une comptabilité complète.</p>
+             <p class="notre_content-p">Voici les <strong>principales obligations fiscales</strong> pour les e-commerçants en France :</p>  
+             <ul class="notre_content-p" style="margin-left: 25px;">    <li><strong>Déclaration de chiffre d’affaires</strong> via autoentrepreneur.urssaf.fr ou comptabilité annuelle selon le statut</li>    <li><strong>Respect des seuils de franchise en base de TVA</strong> : 85 000 € pour les ventes de biens et 37 500 € pour les services</li>    <li><strong>Paiement des droits de douane</strong> calculés sur la valeur CIF, avec des taux variables selon les produits importés</li>    <li><strong>Aquittement de la CFE</strong>, avec possibilité d’exonération partielle pour les micro-entrepreneurs</li>    <li><strong>Imposition des bénéfices</strong> : IR pour les entreprises individuelles ou IS (15 % sur les premiers 42 500 € et 25 % au-delà) pour les sociétés</li>  </ul>  
+             <p class="notre_content-p">Les seuils de chiffre d'affaires conditionnent l'assujettissement à la TVA. En France, les ventes de biens dépassant 85 000 € ou les <strong>services au-delà de 37 500 € annuels</strong> déclenchent l'obligation de collecte et de reversement de la TVA. Les ventes intra-UE vers des particuliers nécessitent aussi une vigilance dès 10 000 € de CA annuel.</p>
+             <h2 id="tva-declarations-fiscales" class="notre_content-title mt-5">Obligations TVA et déclarations fiscales pour les e-commerçants</h2>  
+             <p class="notre_content-p">La TVA pour les activités e-commerce dépend du statut de l'entreprise et du type de transaction. Pour les ventes de biens, le <strong>taux standard de 20%</strong> s’applique en France, avec des taux réduits à 10% ou 5,5% selon les produits. Les opérations transfrontalières impliquent des règles spécifiques, avec un seuil unique à 10 000 € pour l’UE.</p>  
+             <div style="overflow:auto;max-width:100%">  
+              <table class="table table-bordered notre_content-p">  <caption>Régimes de TVA pour l'e-commerce en France : Conditions et obligations déclaratives</caption>    <thead>      <tr>        <th>Régime de TVA</th>        <th>Conditions d'application</th>        <th>Obligations déclaratives et spécificités</th>      </tr>    </thead>    <tbody>      <tr>        <td>Seuil unique UE</td>        <td>Chiffre d'affaires annuel ≤ 10 000 € en ventes à distance intra-UE</td>        <td>TVA du pays du vendeur (France). Au-delà du seuil, TVA du pays de destination + déclaration via le guichet unique OSS</td>      </tr>      <tr>        <td>Franchise en base</td>        <td>Chiffre &lt; 85 000 € (vente de biens) ou &lt;37 500 € (prestations de services)</td>        <td>Pas de TVA facturée ni récupérée. Exclusion des obligations de déclaration TVA</td>      </tr>      <tr>        <td>Régime réel simplifié</td>        <td>85 000 € à 840 000 € (vente) ou 37 500 € à 254 000 € (service)</td>        <td>2 acomptes semestriels + déclaration annuelle de régularisation</td>      </tr>      <tr>        <td>Régime réel normal</td>        <td>Chiffre d'affaires illimité (pas de seuil)</td>        <td>Paiement mensuel ou trimestriel (si TVA annuelle &lt; 4 000 €)</td>      </tr>      <tr>        <td>Guichet unique OSS</td>        <td>Ventes à distance intra-UE (biens et services numériques)</td>        <td>Déclaration unique via impots.gouv.fr. TVA du pays de destination appliquée</td>      </tr>      <tr>        <td>Guichet unique IOSS</td>        <td>Ventes de biens importés hors UE (ex. Chine vers UE)</td>        <td>Déclaration mensuelle de TVA via IOSS. TVA collectée à l'importation</td>      </tr>      <tr>        <td>Ventes BtoB intra-UE</td>        <td>Clients professionnels avec numéro TVA intracommunautaire</td>        <td>Autoliquidation de la TVA par l'acheteur au pays de livraison</td>      </tr>      <tr>        <td>Export hors UE</td>        <td>Destination hors Union Européenne</td>        <td>Exonération de TVA sous preuve d'exportation. Régimes douaniers spécifiques à appliquer</td>      </tr>      <tr>        <td>Taux de TVA</td>        <td>France : 20% normal, 10% et 5,5% réduits. UE : min. 15%</td>        <td>Adaptation au type de produit/service. Régimes spécifiques selon pays (ex. 17% au Luxembourg, 27% en Hongrie)</td>      </tr>    </tbody>  </table>  </div>  
+              <p class="notre_content-p">Les <strong>échéances fiscales dépendent</strong> du régime choisi. Les micro-entrepreneurs déclarent leurs revenus mensuellement ou trimestriellement, via l’application dédiée. Les entreprises en régime réel doivent gérer des acomptes semestriels et une déclaration annuelle, avec des obligations spécifiques selon leur chiffre d’affaires et secteur d’activité.</p>  
+              <p class="notre_content-p">Pour les ventes dans l’Union européenne, le guichet unique OSS <strong>simplifie les déclarations de TVA à l’international</strong>. Au-delà de 10 000 € de chiffre d’affaires annuel, la TVA s’applique dans le pays d’achat, avec une déclaration centralisée pour toutes les ventes intra-UE réalisées par l’e-commerçant.</p>
+          </div>
+
+          <div class="notre_content">
+             <h3 class="notre_content-head">Choisir le régime fiscal adapté à votre activité e-commerce</h3>
+             <p class="notre_content-p">Le choix entre le régime <strong>micro-entreprise et régime réel</strong> dépend de votre chiffre d'affaires et de vos besoins. La micro-entreprise offre simplicité administrative avec un abattement forfaitaire, mais impose des plafonds. Le régime réel, réservé aux structures plus importantes, permet de déduire les charges réelles, mais implique une comptabilité plus rigoureuse.</p>
+             <p class="notre_content-p">Le régime micro-entreprise s'adresse aux e-commerçants dont le chiffre d'affaires annuel <strong>ne dépasse pas 188 700 €</strong> pour les activités commerciales. Le bénéfice imposable s'obtient en appliquant un abattement de 71 % au chiffre d'affaires. Ce statut simplifié facilite la déclaration des revenus via le site autoentrepreneur.urssaf.fr, mais interdit la récupération de la TVA. Il convient parfaitement aux petits projets de vente en ligne.</p>
+             <p class="notre_content-p">Le régime réel simplifié s'applique aux e-commerçants réalisant un chiffre d'affaires compris entre 77 700 € et 254 000 € pour les services, ou entre 188 700 € et 840 000 € pour le commerce. Il allège les obligations comptables par rapport au régime réel normal. Les <strong>charges réelles sont déductibles</strong>, ce qui permet de réduire le bénéfice imposable.</p>
+             <p class="notre_content-p">Les sociétés comme la SARL ou la SAS sont soumises à l'impôt sur les sociétés. Le taux réduit de 15 % s'applique sur les premiers 42 500 € de bénéfice, puis un taux de 25 % au-delà. <strong>Ce statut protège le patrimoine personnel</strong> et offre plus de souplesse pour la rémunération des dirigeants.</p>
+             <h3 class="notre_content-head">Stratégies d'optimisation fiscale et prévention des risques</h3>
+             <p class="notre_content-p">Plusieurs <strong>stratégies d'optimisation fiscale</strong> s'offrent aux e-commerçants. Le choix du statut juridique influence la charge fiscale, tout comme la déduction des charges réelles ou l'amortissement des investissements. <a href="https://liberize.fr/charges-deductible-lmnp">Découvrez les charges déductibles éligibles</a> pour réduire votre charge fiscale. <a href="https://liberize.fr/report-deficit-lmnp">Apprenez à reporter les déficits</a> pour optimiser votre fiscalité.</p>
+             <div style="overflow:auto;max-width:100%">
+              <table class="table table-bordered notre_content-p">  <caption>Erreurs fiscales courantes et conséquences</caption>  <thead>    <tr>      <th>Erreur fiscale</th>      <th>Conséquences en cas de contrôle</th>      <th>Prévention</th>    </tr>  </thead>  <tbody>    <tr>      <td>Mauvaise application des taux de TVA</td>      <td>Redressement fiscal avec majoration de 40 %</td>      <td>Vérifier les règles spécifiques selon les produits</td>    </tr>    <tr>      <td>Oubli de déclaration de revenus e-commerce</td>      <td>Révision de l'impôt avec pénalités</td>      <td>Utiliser un logiciel de comptabilité fiable</td>    </tr>    <tr>      <td>Confusion entre revenus personnels et comptes professionnels</td>      <td>Requalification des revenus avec arriérés fiscaux</td>      <td>Ouvrir un compte bancaire professionnel</td>    </tr>    <tr>      <td>Erreurs dans les déclarations intracommunautaires</td>      <td>Amendes allant jusqu'à 7 500 €</td>      <td>Former les équipes aux spécificités européennes</td>    </tr>    <tr>      <td>Non-respect des obligations de facturation électronique</td>      <td>Majorations de 10 à 20 % des montants concernés</td>      <td>S'adapter à l'évolution des réglementations</td>    </tr>  </tbody></table>
+          </div>
+          <p class="notre_content-p">Consulter un expert-comptable s'impose pour <strong>assurer le respect des obligations fiscales</strong>. Il conseille sur les régimes fiscaux adaptés, optimise les déclarations TVA et anticipe les risques. Son accompagnement est particulièrement pertinent pour les activités transfrontalières ou les sociétés soumises à l'impôt sur les sociétés.</p>
+          <ul class="notre_content-p" style="margin-left: 25px;">  <li><strong>Factures d'achat et de vente</strong> conservées 10 ans</li>  <li><strong>Bilans et comptes de résultat</strong> archivés 6 ans</li>  <li><strong>Déclarations de TVA</strong> et liasses fiscales conservées 6 à 10 ans</li>  <li><strong>Contrats commerciaux</strong> et documents douaniers archivés 5 ans</li>  <li><strong>Documents comptables</strong> numérisés avec date et signature électronique</li></ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mt-5">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 id="fiscalite-internationale-ecommerce" class="notre_content-title">Fiscalité internationale et défis du commerce électronique transfrontalier</h2>
+              <p class="notre_content-p">Les ventes à l'international impliquent une gestion fiscale <strong>complexe et éviter la double imposition</strong> de vos revenus.</p>
+              <p class="notre_content-p">Depuis juillet 2021, vous appliquez la TVA du pays d'acquisition si vos ventes intra-UE dépassent 10 000 € annuels. <a href="https://liberize.fr/tva-sur-sponsoring">Explorez les règles TVA applicables</a>. Le guichet unique OSS centralise vos déclarations pour toutes les ventes à distance dans l'Union européenne, avec un point d'entrée unique pour la TVA, les taux variables selon les pays (17 % au Luxembourg, 27 % en Hongrie) et une <strong>simplification des démarches fiscales</strong> transfrontalières.</p>
+              <p class="notre_content-p">Pour les exportations hors UE, une <strong>exonération de TVA s'applique</strong> sous réserve de justificatifs. Vous devez respecter les réglementations douanières, déterminer les droits de douane selon le code TARIC et adapter votre facturation aux spécificités du pays destinataire, en incluant éventuellement un numéro de TVA intracommunautaire.</p>
+              <p class="notre_content-p">En dropshipping, vous restez responsable de la collecte de la TVA, même si la livraison provient d'un prestataire. Les marketplaces comme Amazon ou Cdiscount assurent cette collecte pour les ventes de biens importés jusqu'à 150 €. Vous devrez néanmoins <strong>déclarer vos revenus et transmettre</strong> les données nécessaires à l'administration fiscale, avec un suivi rigoureux de vos opérations transfrontalières.</p>
+              <p class="notre_content-p">Maîtriser la fiscalité e-commerce en France repose sur trois piliers : comprendre les régimes fiscaux adaptés à votre activité, respecter les obligations de TVA (notamment pour les ventes intra-UE via l'OSS), et anticiper les défis transfrontaliers. Une gestion rigoureuse, appuyée par un expert-comptable, évite les risques de contrôle fiscal tout en optimisant votre imposition. En intégrant ces bonnes pratiques dès le lancement, vous transformez la conformité fiscale en <strong>levier de croissance</strong>, garantissant sérénité et pérennité à votre projet de vente en ligne.</p>
+
+
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

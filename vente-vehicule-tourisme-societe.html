@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script>
+    function addTitleToLinks() {
+    var links = document.querySelectorAll('a');
+  
+    links.forEach(function(link) {
+        if (!link.hasAttribute('title')) {
+            var linkText = link.textContent;
+            link.setAttribute('title', linkText);
+        }
+    });
+  }
+  
+  addTitleToLinks();
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., "accueil.html"
+    const navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // match filename only
+      if (linkPath === currentPath || (currentPath === "" && linkPath.includes("/"))) {
+        link.parentElement.classList.add("active");
+      } else {
+        link.parentElement.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current path
+  const currentPath = window.location.pathname;
+  
+  // Select all navigation links in both desktop and mobile menus
+  // Adjust the selector to target the <a> tags inside the menu-top class
+  const navLinks = document.querySelectorAll(".menu-top a");
+  
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) {
+      // Skip this link if there's no href
+      return;
+    }
+    
+    // Remove any active class from the parent li
+    link.parentElement.classList.remove("active");
+    
+    // Check if the current path includes the href or if the href is for the home page and we are at the root
+    if (currentPath === href || 
+        (currentPath === "/" && href.includes("accueil")) ||
+        (currentPath === "" && href.includes("accueil"))) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+  <title>Vente Véhicule de Tourisme par une Société | Erreur à Éviter</title>
+<meta property="og:title" content="Vente Véhicule de Tourisme par une Société | Erreur à Éviter" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/vente-vehicule-tourisme-societe" />
+<meta property="og:url" content="http://localhost:4000/vente-vehicule-tourisme-societe" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/vente-vehicule-tourisme-societe",
+"description":"",
+"name":"Vente Véhicule de Tourisme par une Société | Erreur à Éviter"
+}
+</script>
+
+
+  <meta name="google-site-verification" content="BGHcSi81zfD76Y9BWFF3d8H5wfYdZV-o9mDoLKe-SGI">
+</head>
+
+<body id="backTotop">
+  <div id="notification_sandbox"></div>
+  <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container">
+      <div class="Navbar_image">
+        <a href="./index.html">
+          <img loading="lazy" src="./assets/img/logo.svg" class="Navbar_image-img"
+            alt="logo Liberize">
+        </a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#philosophie">Notre philosophie</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="./a-propos-du-cabinet-liberize.html">A propos</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./equipe-cabinet-comptable-paris-saint-michel-sur-orge.html">L’équipe</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link"
+              href="./questions-reponses-cabinet-comptable.html">Faq</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+  
+
+  <div class="backTotop">
+    <a href="#backTotop">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  <div class="fixphone">
+    <a href="tel:0164968311" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;0164968311</a>
+  </div>
+
+
+  <div class="">
+    <div id="page-wrapper">
+  <section class="banner">
+<div class="banner_left">
+  <img src="./assets/img/left.svg" alt="triangle jaune" class="banner_left-img">
+</div>
+<div class="banner_right">
+  <img src="./assets/img/right.svg" alt="triangle vert" class="banner_right-img">
+</div>
+<div class="container">
+  <div class="banner_content">
+      <h1 class="banner_content-title">Tout savoir sur la vente de véhicules de tourisme par une société</h1>
+      <div class="banner_content-dots">
+          <img src="./assets/img/dots.png" alt="Pointillés jaune" class="banner_content-dots--img">
+      </div>
+      <p class="banner_content-p">
+          La <strong>gestion d'une flotte de véhicules de tourisme</strong> est un enjeu important pour les sociétés. À un moment ou à un autre, il devient nécessaire de vendre ces véhicules. Que ce soit pour renouveler la flotte ou juste se séparer de certaines voitures devenues obsolètes, cette opération nécessite une préparation et des démarches administratives spécifiques. Cet article explore les différentes étapes et conseils pratiques pour réussir la <strong>vente de véhicules de tourisme par une société</strong>. Plongeons dans le sujet.
+      </p>
+  </div>
+</div>
+</section>
+
+<section class="notre">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_image">
+              <img src="./assets/img/vente.jpg" style="height: 554px; object-fit: cover;" alt="photo de deux personne devant une voiture" class="notre_image-img">
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">L'importance de bien préparer la vente</h2>
+              <h3 class="notre_content-head">Évaluation du véhicule</h3>
+              <p class="notre_content-p">
+                  Avant toute chose, il est essentiel de connaître la <strong>valeur marchandedu véhicule </strong>  que vous souhaitez vendre. Cette étape permet d'éviter de surévaluer ou de sous-estimer le prix de vente et d'optimiser ainsi vos revenus. Faites appel à un expert automobile ou consultez les plateformes en ligne spécialisées pour une estimation précise.
+              </p>
+              <p class="notre_content-p">
+                  Les facteurs influençant la valeur d'un véhicule incluant son âge, son kilométrage, son entretien ainsi que son état général. Tous ces éléments doivent être pris en compte pour fixer un juste prix. N'oubliez pas non plus les équipements supplémentaires qui peuvent augmenter sa valeur.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Le contrôle technique</h3>
+              <p class="notre_content-p">
+                  Un véhicule destiné à la vente doit passer un <strong>contrôle technique</strong>, sauf s'il a moins de quatre ans. Ce contrôle valide les conditions de sécurité et le respect des normes environnementales et est obligatoire pour toute cession de véhicule. Un contrôle technique récent rassure les acheteurs potentiels et peut accélérer la vente.
+              </p>
+              <p class="notre_content-p">
+                  Pensez à faire réaliser le contrôle technique avant de mettre votre véhicule en vente. Ainsi, vous pourrez apporter les réparations nécessaires et assurer un bon état de fonctionnement du véhicule.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Réalisation des formalités administratives</h2>
+              <h3 class="notre_content-head">La déclaration de cession</h3>
+              <p class="notre_content-p">
+                  Lorsqu'une société vend un véhicule, elle doit remplir une <strong>déclaration de cession</strong>. Ce document officiel indique que le véhicule change de propriétaire. Le formulaire cerfa n°15776*01 est utilisé pour cela. Une fois rempli, ce formulaire doit être envoyé à l'<strong>ants (agence nationale des titres sécurisés)</strong>.
+              </p>
+              <p class="notre_content-p">
+                  Il est crucial que la déclaration de cession soit correctement remplie et signée par les deux parties. Gardez une copie pour vos dossiers, car elle peut être requise en cas de litige futur.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Le certificat de vente véhicule société</h3>
+              <p class="notre_content-p">
+                  Ensuite, il faut remettre à l'acheteur le <strong>certificat de vente véhicule société</strong>. C'est une preuve de vente indispensable. En parallèle, veillez à fournir également la carte grise barrée avec la mention "vendu le" et la date de la transaction. Cela atteste officiellement que le véhicule appartient désormais au nouvel acheteur.
+              </p>
+              <p class="notre_content-p">
+                  Assurez-vous que toutes les informations inscrites soient conformes aux documents officiels pour éviter tout problème ultérieur.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Avantages fiscaux et comptables</h2>
+              <h3 class="notre_content-head">Déduction fiscale</h3>
+              <p class="notre_content-p">
+                  Vendre un véhicule de tourisme peut offrir certains avantages fiscaux. Les entreprises peuvent souvent bénéficier d'une <strong>déduction fiscalesur la TVA </strong>  lors de la vente. Il est conseillé de consulter votre comptable ou expert-comptable pour optimiser ces avantages fiscaux. Pensez également à conserver tous les justificatifs de cette transaction pour vos archives comptables.
+              </p>
+              <p class="notre_content-p">
+                  En planifiant bien la vente et en liant les transactions à l'année fiscale correcte, vous pouvez maximiser les bénéfices tout en réduisant la charge fiscale.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Plus-value imposable</h3>
+              <p class="notre_content-p">
+                  Si un véhicule réalise une <strong>plus-value</strong> lors de sa vente, cela signifie que le prix de vente est supérieur à sa valeur nette comptable. Cette plus-value est généralement <strong>imposable</strong>. Cependant, diverses stratégies fiscales peuvent permettre de réduire cet impôt. Là encore, l'avis d'un expert fiscal peut être déterminant.
+              </p>
+              <p class="notre_content-p">
+                  Comptez sur une planification rigoureuse pour réduire au minimum les charges fiscales liées à la plus-value imposable.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Véhicule vendu : que se passe-t-il ensuite ?</h2>
+              <h3 class="notre_content-head">Transfert de propriété</h3>
+              <p class="notre_content-p">
+                  Une fois la vente finalisée, le <strong>transfert de propriété</strong> doit être effectué rapidement pour éviter toute responsabilité future. Envoyez une copie de la déclaration de cession à l'ants dès que possible. L'acheteur devra, de son côté, effectuer les démarches nécessaires pour obtenir une nouvelle carte grise à son nom.
+              </p>
+              <p class="notre_content-p">
+                  Cette étape est cruciale pour éviter que le vendeur ne soit tenu responsable des infractions commises par le nouveau propriétaire après la vente.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Mise à jour des documents comptables</h3>
+              <p class="notre_content-p">
+                  Finalement, n'oubliez pas de mettre à jour vos <strong>documents comptables</strong> suite à la vente. Notez la sortie d'actif du véhicule vendu afin qu'elle apparaisse correctement dans votre bilan financier. Ce suivi garantit une bonne gestion de vos actifs et facilite les audits financiers éventuels.
+              </p>
+              <p class="notre_content-p">
+                  De plus, archivez tous les documents relatifs à la vente, incluant la déclaration de cession et la preuve de paiement, pour assurer une traçabilité complète.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Erreurs à éviter lors de la vente</h2>
+              <h3 class="notre_content-head">Se précipiter</h3>
+              <p class="notre_content-p">
+                  Une erreur courante est de vouloir vendre trop rapidement sans avoir bien préparé le dossier. Vérifiez minutieusement tous les papiers et assurez-vous que le véhicule est prêt pour les visites. Une bonne préparation augmente les chances de conclure une vente avantageuse et sans encombre.
+              </p>
+              <p class="notre_content-p">
+                  Ne négligez pas le temps nécessaire pour réaliser un contrôle technique si besoin et pour nettoyer le véhicule, rendant la présentation plus attractive pour les acheteurs potentiels.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Ignorer les aspects juridiques et fiscaux</h3>
+              <p class="notre_content-p">
+                  Enfin, méfiez-vous des implications légales et fiscales. Ignorer les obligations pourrait entraîner des amendes ou autres pénalités. Consultez toujours un conseiller juridique ou fiscal pour garantir que toutes les règles sont suivies à la lettre.
+              </p>
+              <p class="notre_content-p">
+                  Les erreurs dans cette phase peuvent coûter cher et compliquer la situation sur plusieurs plans, il vaut donc mieux prendre toutes les précautions nécessaires.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Astuces pour faciliter le processus de vente</h2>
+              <p class="notre_content-p">
+                  N'hésitez pas à utiliser plusieurs canaux de communication pour annoncer la vente de votre véhicule. Les petites annonces en ligne, les réseaux sociaux et même les concessions peuvent être des moyens efficaces. Une description détaillée et des photos attractives augmentent les chances de trouver rapidement un acheteur.
+              </p>
+              <ul class="pl-5">
+                  <li class="notre_content-p">
+                      Préparez un dossier complet du véhicule incluant le carnet d'entretien et les factures de réparation.
+                  </li>
+                  <li class="notre_content-p">
+                  Mettez en avant les points forts du véhicule comme l'état impeccable, le faible kilométrage ou les options spécifiques.
+                  </li>
+                  <li class="notre_content-p">
+                      Adaptez vos horaires de visite pour faciliter la rencontre avec les acheteurs potentiels.
+                  </li>
+                  <li class="notre_content-p">
+                  En suivant ces astuces, vous simplifierez grandement la vente et rassurerez les acheteurs potentiels sur le sérieux de votre démarche.
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Focus sur les particularités de la vente par une société</h2>
+              <h3 class="notre_content-head">Gestion de la tva</h3>
+              <p class="notre_content-p">
+                  Lorsqu'une société vend un véhicule, la <strong>gestion de la tva</strong> est primordiale. Assurez-vous de calculer et déclarer correctement la TVA auprès des autorités compétentes. La vente peut parfois être exonérée, alors pensez à vérifier les conditions applicables pour votre entreprise.
+              </p>
+              <p class="notre_content-p">
+                  Consultez régulièrement les mises à jour fiscales pour rester conforme aux dernières réglementations en vigueur concernant les ventes de véhicules.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Documenter chaque étape de la vente</h3>
+              <p class="notre_content-p">
+                  Sauvegardez chaque étape du processus de vente. La documentation est essentielle pour la traçabilité et la conformité réglementaire. De la première évaluation jusqu'à la signature finale de la déclaration de cession, gardez une trace écrite de chaque action.
+              </p>
+              <p class="notre_content-p">
+                  Cette pratique facilite non seulement la gestion administrative mais est aussi utile lors des prochains audits ou contrôles internes.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="notre_content">
+              <h2 class="notre_content-title">Résoudre les litiges potentiels</h2>
+              <h3 class="notre_content-head">Médiation et solutions amiables</h3>
+              <p class="notre_content-p">
+                  Malgré toute votre préparation, des litiges avec l'acheteur peuvent survenir. Préférez toujours une approche de médiation pour résoudre les conflits. Chercher des solutions amiables évite de longues procédures judiciaires et préserve la relation professionnelle.
+              </p>
+              <p class="notre_content-p">
+                  Proposez des compromis acceptables et soyez transparent sur l'état du véhicule et les termes de la vente.
+              </p>
+          </div>
+
+          <div class="notre_content">
+              <h3 class="notre_content-head">Recours légaux</h3>
+              <p class="notre_content-p">
+                  Si nécessaire, engagez des <strong>actions légales</strong>. Cela devrait être un dernier recours après avoir épuisé toutes les autres options. Consulter un avocat spécialisé permet de naviguer efficacement dans ce genre de situation.
+              </p>
+              <p class="notre_content-p">
+                  Utilisez les recours légaux uniquement lorsque c'est absolument nécessaire pour régler le litige de façon équitable.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+  </div>
+
+
+
+  <footer class="footer" id="contact">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="footer_content">
+        <div class="footer_content-logo">
+          <a href="./index.html">
+            <img loading="lazy" src="./assets/img/logo.svg" class="footer_content-logo--img" alt="logo Liberize">
+          </a>
+        </div>
+        <p class="footer_content-p">29 rue Rosières 91240 Saint-Michel-sur-Orge</p>
+        <p class="footer_content-p">Tel: <a href="tel:0164968311"
+            class="footer_content-p">01 64 96 83 11</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">15-17 passage du Bourg l’Abbé 75002 Paris</p>
+        <p class="footer_content-p">Tel: <a href="tel:01 40 26 44 41" class="footer_content-p">01 40 26 44 41</a></p>
+        <p class="footer_content-p"><a href="mailto:hello@liberize.fr"
+            class="footer_content-p">hello@liberize.fr</a>
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Paris 16 :</p>
+        <p class="footer_content-p">68 rue Michel ange 75016</p>
+      </div>
+
+      <div class="footer_content">
+        <p class="footer_content-p">Adresse cabinet Montargis :</p>
+        <p class="footer_content-p">59 Avenue du général de Gaulle 45200 MONTARGIS</p>
+      </div>
+      <div class="footer_content">
+        <ul class="footer_content-ul">
+          <li class="footer_content-li">
+            <a href="./index.html" class="footer_content-li--link">Cabinet comptable 91</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./depot-compte-annuel.html" class="footer_content-li--link">Dépôt compte annuel</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./materiel-outillage-comptable.html" class="footer_content-li--link">Materiel outillage
+              comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./report-deficit-lmnp.html" class="footer_content-li--link">Report deficit lmnp</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./charges-deductible-lmnp.html" class="footer_content-li--link">Charges déductible
+              LMNP</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./liasse-fiscale.html" class="footer_content-li--link">Liasse fiscale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./difference-expert-comptable-commisaire-aux-comptes.html"
+              class="footer_content-li--link">Différence expert comptable commisaire aux comptes</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./duree-exercice-comptable.html" class="footer_content-li--link"> Durée d'un Exercice
+              Comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptabilite-artisan.html" class="footer_content-li--link">Comptabilité artisan</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./facture-a-etablir.html" class="footer_content-li--link">Facture à établir</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-medecin-liberal.html" class="footer_content-li--link">Comptable médecin
+              libéral</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comment-comptabiliser-affacturage.html" class="footer_content-li--link">Comment
+              comptabiliser affacturage</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./compte-comptable-avantage-en-nature.html" class="footer_content-li--link">Les avantages
+              en nature et leur traitement comptable</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./rappel-remuneration-principale.html" class="footer_content-li--link">Rappel sur la
+              rémunération principale</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-sur-sponsoring.html" class="footer_content-li--link">TVA sur Sponsoring</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./vente-vehicule-tourisme-societe.html" class="footer_content-li--link">Vente Véhicule de
+              Tourisme par une Société</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./questions-reponses-cabinet-comptable.html" class="footer_content-li--link">Toutes les
+              questions / réponses</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./declaration-echange-services.html" class="footer_content-li--link">Déclaration Échange
+              Services</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./tva-marge-marchand-bien.html" class="footer_content-li--link">Tva Marge Marchand
+              Bien</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./fiscalite-e-commerce-france.html" class="footer_content-li--link">Fiscalité e-commerce
+              France</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./comptable-sainte-genevieve-des-bois.html" class="footer_content-li--link">Comptable
+              sainte genevieve des bois</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./mentions-legales.html" class="footer_content-li--link">Mentions légales</a>
+          </li>
+          <li class="footer_content-li">
+            <a href="./politique-de-confidentialite.html" class="footer_content-li--link">Politique de
+              confidentialité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="footer_form">
+        <div class="footer_form-content">
+          <p class="footer_form-content--title">Contactez-nous</p>
+        </div>
+        <form class="form" id="contactForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="/message-envoye" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="198" />
+          <input type="hidden" name="lang" value="fr" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="6Lfq_jwsAAAAAOTeR68iReL9nklKlyE9g_pGZ-hv">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="entreprise" name="entreprise"
+                      placeholder="Entreprise" value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="name" name="name" placeholder="Nom et prénom"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="email" class="footer_form-input" id="email" name="email" placeholder="Email*" value=""
+                      required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group ">
+                    <input type="text" class="footer_form-input" id="phone" name="phone" placeholder="Téléphone*"
+                      value="" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea class="footer_form-input h-100" name="commentaire" id="commentaire" rows="4"
+                      placeholder="Votre message"></textarea>
+                  </div>
+                </div>
+                <!-- <div class="col-md-12">
+                                  <div class="form-group d-flex flex-column align-items-center">
+                                      <div class="g-recaptcha" data-sitekey="6LfJorIqAAAAAO6jIGfE1MGlya_9SxtvLPc5mT_T"></div>
+                                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                                                          </div>
+                              </div> -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Lfq_jwsAAAAAL0TCSwZzlAqpu5J0yzoxXUEX33g">
+              </div>
+              <br />
+              <div id="contact-form-response" class="contact_form-response"></div>
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+            </div>
+            <div class="checkbox d-flex">
+              <input name="condition" type="checkbox" style="height:2rem; width:2rem; vertical-align: middle;" />
+              <span class="contact_space-form--label"
+                style="color: #fff !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                de vos données par ce site *</span>
+              <i class="fa fa-info-square" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <button type="submit" class="footer_form-btn form-submit" value="Submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ"></script>
+
+<script>
+  grecaptcha.ready(() => {
+    grecaptcha.execute("6LeA8d0qAAAAAPyR_T5KKC0pNh_8H1HuT_90vOIJ", { action: 'validate_captcha' }).then(token => {
+      //console.log(token);
+      document.querySelector('.recaptcha-token').value = token;
+    });
+  });
+</script>
+
+<script>
+  s$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
+
+  const nav = document.querySelector(".Navbar");
+  window.addEventListener("scroll", fixNav);
+
+  function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+      nav.classList.add("navbar-active");
+    } else {
+      nav.classList.remove("navbar-active");
+    }
+  }
+</script>
+
+<script>
+  var owl = $(".owl");
+  owl.owlCarousel({
+    items: 2,
+    navigation: false,
+    loop: true,
+    stagePadding: 100,
+    rewind: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    margin: 30,
+    // animateIn: "fadeIn",
+    // animateOut: "fadeOut",
+    // navText: [
+    //   "<i class='fas fa-chevron-left nav-left'></i>",
+    //   "<i class='fas fa-chevron-right nav-right'></i>",
+    // ],
+    responsiveClass: true,
+    responsive: {
+      200: {
+        items: 1,
+        nav: true,
+      },
+      350: {
+        items: 1,
+        nav: true,
+      },
+      380: {
+        items: 1,
+        nav: true,
+      },
+      400: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      990: {
+        items: 1,
+        nav: true,
+      },
+      1200: {
+        items: 2,
+        nav: false,
+      },
+      1600: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+</script>
+
+<script>
+  // close opened details
+  const details = document.querySelectorAll("details");
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>
