@@ -423,7 +423,7 @@ body {
   margin-left: -7rem
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1300px) {
   .slider_content-title {
     margin-left: 0 !important;
     margin-right: 0 !important;
